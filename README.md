@@ -25,3 +25,7 @@ Some changes have to be made because of Java's diffrence from C/C++
   ` getMouseX() ` and ` getMouseY() `.
 * In all the vectors I had to change so instead of variables you will call a function to set and get the value, for example in the vector2 class you will find `x()` and `x(float x)` which are used to set and get the value of x.
 * In the matrix class I changed so to get the value at a point you call the `elements(int index)` method and to set the value you call the `elements(int index, float value)`.
+
+# Links
+* sparky game engine - https://github.com/TheCherno/Sparky
+* The Cherno youtube channel - https://www.youtube.com/channel/UCQ-W1KE9EYfdxhL6S4twUNw
