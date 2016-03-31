@@ -1,0 +1,84 @@
+#include "sp_sparky4j_core_maths_Vector2.h"
+#include "../src/maths/vec2.h"
+#include "handle.h"
+
+namespace sparky4j {
+	namespace maths {
+		using namespace sparky::maths;
+
+		JNIEXPORT void JNICALL Java_sp_sparky4j_core_maths_Vector2_bind
+			(JNIEnv *env, jobject obj, jfloat x, jfloat y) {
+			vec2* vec = new vec2(x, y);
+			setHandle(env, obj, vec);
+		}
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    add
+		* Signature: (Lsp/sparky4j/core/maths/Vector2;)Lsp/sparky4j/core/maths/Vector2;
+		*/
+		JNIEXPORT jobject JNICALL Java_sp_sparky4j_core_maths_Vector2_add
+			(JNIEnv *env, jobject obj, jobject other) {
+			return obj;
+		}
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    subtract
+		* Signature: (Lsp/sparky4j/core/maths/Vector2;)Lsp/sparky4j/core/maths/Vector2;
+		*/
+		JNIEXPORT jobject JNICALL Java_sp_sparky4j_core_maths_Vector2_subtract
+			(JNIEnv *env, jobject obj, jobject other) {
+			return obj;
+		}
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    multiply
+		* Signature: (Lsp/sparky4j/core/maths/Vector2;)Lsp/sparky4j/core/maths/Vector2;
+		*/
+		JNIEXPORT jobject JNICALL Java_sp_sparky4j_core_maths_Vector2_multiply
+			(JNIEnv *env, jobject obj, jobject other) {
+			return obj;
+		}
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    divide
+		* Signature: (Lsp/sparky4j/core/maths/Vector2;)Lsp/sparky4j/core/maths/Vector2;
+		*/
+		JNIEXPORT jobject JNICALL Java_sp_sparky4j_core_maths_Vector2_divide
+			(JNIEnv *env, jobject obj, jobject other) {
+			return obj;
+		}
+
+		JNIEXPORT jfloat JNICALL Java_sp_sparky4j_core_maths_Vector2_x__
+			(JNIEnv *env, jobject obj) {
+			vec2* vec = getHandle<vec2>(env, obj);
+			return vec->x;
+		}
+
+		JNIEXPORT jfloat JNICALL Java_sp_sparky4j_core_maths_Vector2_y__
+			(JNIEnv *env, jobject obj) {
+			vec2* vec = getHandle<vec2>(env, obj);
+			return vec->y;
+		}
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    x
+		* Signature: (F)V
+		*/
+		JNIEXPORT void JNICALL Java_sp_sparky4j_core_maths_Vector2_x__F
+			(JNIEnv *, jobject, jfloat);
+
+		/*
+		* Class:     sp_sparky4j_core_maths_Vector2
+		* Method:    y
+		* Signature: (F)V
+		*/
+		JNIEXPORT void JNICALL Java_sp_sparky4j_core_maths_Vector2_y__F
+			(JNIEnv *, jobject, jfloat);
+
+	}
+}

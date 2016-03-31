@@ -1,0 +1,3 @@
+﻿main.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
+C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\dependencies\libs\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+c:\users\home\documents\visual studio 2015\Projects\Sparky4j\Debug\Sparky4j-core.exe : fatal error LNK1120: 1 unresolved externals

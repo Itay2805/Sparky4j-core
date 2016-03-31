@@ -1,0 +1,8 @@
+﻿  sp_sparky4j_core_graphics_Simple2DRenderer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\maths\maths_funcs.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     Creating library c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.lib and object c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\vc120.pdb'; linking object as if no debug info
+  Sparky4j-core.vcxproj -> c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.dll
+  Sparky4j-core.vcxproj -> c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.pdb (Partial PDB)
