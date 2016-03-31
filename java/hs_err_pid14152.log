@@ -1,0 +1,264 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffdb8fb5c37, pid=14152, tid=2372
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_73-b02) (build 1.8.0_73-b02)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.73-b02 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [Sparky4j-core.dll+0x35c37]  sparky::graphics::BatchRenderer2D::submit+0x77
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002310800):  JavaThread "main" [_thread_in_native, id=2372, stack(0x0000000002150000,0x0000000002250000)]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x000000001aa96908, RCX=0x000000000000000c, RDX=0x00000000005e78f0
+RSP=0x000000000224f150, RBP=0x000000000224f170, RSI=0x00000000005e78f8, RDI=0x0000000000000000
+R8 =0x0000000000000062, R9 =0x0000000773181f50, R10=0x0000000000000000, R11=0x00000000565e22a8
+R12=0x0000000000000000, R13=0x000000001aa96908, R14=0x000000000224f570, R15=0x0000000002310800
+RIP=0x00007ffdb8fb5c37, EFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0x000000000224f150)
+0x000000000224f150:   00000000005e78f0 cccccccccccccccc
+0x000000000224f160:   cccccccccccccccc cccccccccccccccc
+0x000000000224f170:   cccccccccccccccc 00000000005e78f8
+0x000000000224f180:   cccccccccccccccc cccccccccccccccc
+0x000000000224f190:   cccccccccccccccc 00000000005e7904
+0x000000000224f1a0:   cccccccccccccccc cccccccccccccccc
+0x000000000224f1b0:   cccccccccccccccc 00000000005e790c
+0x000000000224f1c0:   cccccccccccccccc cccccccccccccccc
+0x000000000224f1d0:   cccccccccccccccc cccccccccccccccc
+0x000000000224f1e0:   cccccccccccccccc cccccccccccccccc
+0x000000000224f1f0:   cccccccccccccccc cccccccccccccccc
+0x000000000224f200:   cccccccccccccccc cccccccccccccccc
+0x000000000224f210:   cccccccccccccccc cccccccccccccccc
+0x000000000224f220:   cccccccccccccccc cccccccccccccccc
+0x000000000224f230:   cccccccccccccccc cccccccccccccccc
+0x000000000224f240:   cccccccccccccccc cccccccccccccccc 
+
+Instructions: (pc=0x00007ffdb8fb5c37)
+0x00007ffdb8fb5c17:   e8 cd 36 ff ff 48 89 45 48 48 8b 85 20 02 00 00
+0x00007ffdb8fb5c27:   48 8b 40 20 48 8b f8 48 8b 75 08 b9 0c 00 00 00
+0x00007ffdb8fb5c37:   f3 a4 48 8b 85 20 02 00 00 48 8b 40 20 48 8d 78
+0x00007ffdb8fb5c47:   0c 48 8b 75 48 b9 10 00 00 00 f3 a4 48 8b 85 20 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX={method} {0x000000001aa96910} 'nativeSubmit' '(Lsp/sparky4j/core/graphics/Renderable2D;)V' in 'sp/sparky4j/core/graphics/BatchRenderer2D'
+RCX=0x000000000000000c is an unknown value
+RDX=0x00000000005e78f0 is an unknown value
+RSP=0x000000000224f150 is pointing into the stack for thread: 0x0000000002310800
+RBP=0x000000000224f170 is pointing into the stack for thread: 0x0000000002310800
+RSI=0x00000000005e78f8 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000062 is an unknown value
+R9 =0x0000000773181f50 is an oop
+sp.sparky4j.core.graphics.Sprite 
+ - klass: 'sp/sparky4j/core/graphics/Sprite'
+R10=0x0000000000000000 is an unknown value
+R11=0x00000000565e22a8 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13={method} {0x000000001aa96910} 'nativeSubmit' '(Lsp/sparky4j/core/graphics/Renderable2D;)V' in 'sp/sparky4j/core/graphics/BatchRenderer2D'
+R14=0x000000000224f570 is pointing into the stack for thread: 0x0000000002310800
+R15=0x0000000002310800 is a thread
+
+
+Stack: [0x0000000002150000,0x0000000002250000],  sp=0x000000000224f150,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [Sparky4j-core.dll+0x35c37]  sparky::graphics::BatchRenderer2D::submit+0x77
+C  [Sparky4j-core.dll+0x302f3]  Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeSubmit+0x73
+C  0x0000000002425e34
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sp.sparky4j.core.graphics.BatchRenderer2D.nativeSubmit(Lsp/sparky4j/core/graphics/Renderable2D;)V+0
+j  sp.sparky4j.core.graphics.BatchRenderer2D.submit(Lsp/sparky4j/core/graphics/Renderable2D;)V+2
+j  itay.test.Main.main([Ljava/lang/String;)V+320
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001d26a800 JavaThread "Service Thread" daemon [_thread_blocked, id=12268, stack(0x000000001db90000,0x000000001dc90000)]
+  0x000000001d1d3800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=9108, stack(0x000000001da90000,0x000000001db90000)]
+  0x000000001d1c8000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=18320, stack(0x000000001d990000,0x000000001da90000)]
+  0x000000001d1bd800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=15740, stack(0x000000001d890000,0x000000001d990000)]
+  0x000000001b08c000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=15572, stack(0x000000001d790000,0x000000001d890000)]
+  0x000000001b08a800 JavaThread "Attach Listener" daemon [_thread_blocked, id=16024, stack(0x000000001d690000,0x000000001d790000)]
+  0x000000001d1c4800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=8496, stack(0x000000001d590000,0x000000001d690000)]
+  0x000000000240b000 JavaThread "Finalizer" daemon [_thread_blocked, id=15288, stack(0x000000001cfb0000,0x000000001d0b0000)]
+  0x0000000002404000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5280, stack(0x000000001ceb0000,0x000000001cfb0000)]
+=>0x0000000002310800 JavaThread "main" [_thread_in_native, id=2372, stack(0x0000000002150000,0x0000000002250000)]
+
+Other Threads:
+  0x000000001b079800 VMThread [stack: 0x000000001cdb0000,0x000000001ceb0000] [id=13452]
+  0x000000001d26d000 WatcherThread [stack: 0x000000001dc90000,0x000000001dd90000] [id=9268]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 69120K, used 7519K [0x0000000773100000, 0x0000000777e00000, 0x00000007c0000000)
+  eden space 59392K, 12% used [0x0000000773100000,0x0000000773857e88,0x0000000776b00000)
+  from space 9728K, 0% used [0x0000000777480000,0x0000000777480000,0x0000000777e00000)
+  to   space 9728K, 0% used [0x0000000776b00000,0x0000000776b00000,0x0000000777480000)
+ ParOldGen       total 158720K, used 0K [0x00000006d9200000, 0x00000006e2d00000, 0x0000000773100000)
+  object space 158720K, 0% used [0x00000006d9200000,0x00000006d9200000,0x00000006e2d00000)
+ Metaspace       used 2584K, capacity 4568K, committed 4864K, reserved 1056768K
+  class space    used 289K, capacity 392K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x00000000117d0000,0x0000000011f10000] byte_map_base: 0x000000000e107000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000565f0600
+ Begin Bits: [0x0000000012be0000, 0x0000000016598000)
+ End Bits:   [0x0000000016598000, 0x0000000019f50000)
+
+Polling page: 0x0000000000990000
+
+CodeCache: size=245760Kb used=1141Kb max_used=1149Kb free=244618Kb
+ bounds [0x0000000002410000, 0x0000000002680000, 0x0000000011410000]
+ total_blobs=293 nmethods=53 adapters=154
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.238 Thread 0x000000001d1bd800 nmethod 47 0x000000000252d8d0 code [0x000000000252da20, 0x000000000252db98]
+Event: 0.238 Thread 0x000000001b08c000 nmethod 49 0x000000000252e0d0 code [0x000000000252e220, 0x000000000252e2a8]
+Event: 0.239 Thread 0x000000001d1c8000   50       4       sp.sparky4j.core.graphics.Sprite::<init> (16 bytes)
+Event: 0.239 Thread 0x000000001d1c8000 nmethod 50 0x000000000252bed0 code [0x000000000252c020, 0x000000000252c0a8]
+Event: 0.327 Thread 0x000000001d1d3800   51       3       java.lang.String::indexOf (166 bytes)
+Event: 0.328 Thread 0x000000001d1d3800 nmethod 51 0x000000000252b310 code [0x000000000252b4c0, 0x000000000252bb10]
+Event: 0.329 Thread 0x000000001d1d3800   52       1       java.net.URL::getProtocol (5 bytes)
+Event: 0.329 Thread 0x000000001d1d3800 nmethod 52 0x000000000252f590 code [0x000000000252f6e0, 0x000000000252f7f0]
+Event: 0.332 Thread 0x000000001d1d3800   53       3       java.lang.String::substring (79 bytes)
+Event: 0.332 Thread 0x000000001d1d3800 nmethod 53 0x000000000252ed10 code [0x000000000252eec0, 0x000000000252f378]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.024 Thread 0x0000000002310800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x000000077310d948) thrown at [D:\re\puppet\workspace\8-2-build-windows-amd64-cygwin\jdk8u73\6086\hotºÛE¥™£˜?
+Event: 0.024 Thread 0x0000000002310800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x000000077310dc30) thrown at [D:\re\puppet\workspace\8-2-build-windows-amd64-cygwin\jdk8u73\6086\hotspot\src\share\vm\
+
+Events (10 events):
+Event: 0.225 loading class sp/sparky4j/core/maths/Vector4
+Event: 0.225 loading class sp/sparky4j/core/maths/Vector4 done
+Event: 0.327 loading class sp/sparky4j/core/maths/Vector2
+Event: 0.327 loading class sp/sparky4j/core/maths/Vector2 done
+Event: 0.328 loading class sp/sparky4j/core/graphics/BatchRenderer2D
+Event: 0.328 loading class sp/sparky4j/core/graphics/BatchRenderer2D done
+Event: 0.329 loading class sp/sparky4j/core/graphics/Renderer2D
+Event: 0.329 loading class sp/sparky4j/core/graphics/Renderer2D done
+Event: 0.331 loading class sp/sparky4j/core/util/Timer
+Event: 0.331 loading class sp/sparky4j/core/util/Timer done
+
+
+Dynamic libraries:
+0x00007ff734fd0000 - 0x00007ff735007000 	C:\Program Files\Java\jre1.8.0_73\bin\javaw.exe
+0x00007ffddb1d0000 - 0x00007ffddb391000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffdd8730000 - 0x00007ffdd87dd000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffdd81a0000 - 0x00007ffdd8388000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffdd9410000 - 0x00007ffdd94b7000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffddaee0000 - 0x00007ffddaf7d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffddafb0000 - 0x00007ffddb00b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ffddad60000 - 0x00007ffddae7c000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffdd85d0000 - 0x00007ffdd8726000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffddab60000 - 0x00007ffddace6000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffdd1c10000 - 0x00007ffdd1e84000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+0x00007ffdd8fc0000 - 0x00007ffdd923d000 	C:\WINDOWS\system32\combase.dll
+0x00007ffdd8560000 - 0x00007ffdd85ca000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ffdd8e30000 - 0x00007ffdd8e6b000 	C:\WINDOWS\system32\IMM32.DLL
+0x0000000054fe0000 - 0x00000000550b2000 	C:\Program Files\Java\jre1.8.0_73\bin\msvcr100.dll
+0x0000000055de0000 - 0x0000000056670000 	C:\Program Files\Java\jre1.8.0_73\bin\server\jvm.dll
+0x00007ffddaf80000 - 0x00007ffddaf88000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffdd2860000 - 0x00007ffdd2869000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffdd6140000 - 0x00007ffdd6163000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffdd2040000 - 0x00007ffdd204a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffdd9240000 - 0x00007ffdd92ab000 	C:\WINDOWS\system32\WS2_32.dll
+0x00000000009d0000 - 0x00000000009fc000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffdd8150000 - 0x00007ffdd8193000 	C:\WINDOWS\system32\cfgmgr32.dll
+0x0000000055cf0000 - 0x0000000055cff000 	C:\Program Files\Java\jre1.8.0_73\bin\verify.dll
+0x0000000055cc0000 - 0x0000000055ce9000 	C:\Program Files\Java\jre1.8.0_73\bin\java.dll
+0x0000000055c70000 - 0x0000000055c86000 	C:\Program Files\Java\jre1.8.0_73\bin\zip.dll
+0x00007ffdd94c0000 - 0x00007ffddaa1c000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007ffdd7880000 - 0x00007ffdd7ec5000 	C:\WINDOWS\system32\windows.storage.dll
+0x00007ffddacf0000 - 0x00007ffddad42000 	C:\WINDOWS\system32\shlwapi.dll
+0x00007ffdd7860000 - 0x00007ffdd786f000 	C:\WINDOWS\system32\kernel.appcore.dll
+0x00007ffdd7f30000 - 0x00007ffdd7fe5000 	C:\WINDOWS\system32\shcore.dll
+0x00007ffdd77f0000 - 0x00007ffdd783b000 	C:\WINDOWS\system32\powrprof.dll
+0x00007ffdd7840000 - 0x00007ffdd7854000 	C:\WINDOWS\system32\profapi.dll
+0x00007ffdd2760000 - 0x00007ffdd2773000 	C:\Users\home\Desktop\coding\CustomLibraries\Sparky4j-core Native\glfw3.dll
+0x00007ffdbf0f0000 - 0x00007ffdbf107000 	C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll
+0x00007ffdd6990000 - 0x00007ffdd6a84000 	C:\WINDOWS\SYSTEM32\ucrtbase.dll
+0x00007ffdd7710000 - 0x00007ffdd771b000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+0x00007ffdb8f80000 - 0x00007ffdb903c000 	C:\Users\home\Desktop\coding\CustomLibraries\Sparky4j-core Native\Sparky4j-core.dll
+0x00007ffdb75a0000 - 0x00007ffdb76c9000 	C:\WINDOWS\SYSTEM32\OPENGL32.dll
+0x00007ffdbd2b0000 - 0x00007ffdbd2d3000 	C:\WINDOWS\SYSTEM32\VCRUNTIME140D.dll
+0x00007ffdb3ed0000 - 0x00007ffdb3fc7000 	C:\WINDOWS\SYSTEM32\MSVCP140D.dll
+0x00007ffdb3850000 - 0x00007ffdb3a0b000 	C:\WINDOWS\SYSTEM32\ucrtbased.dll
+0x00007ffdb7530000 - 0x00007ffdb755e000 	C:\WINDOWS\SYSTEM32\GLU32.dll
+0x00007ffdb73c0000 - 0x00007ffdb74ba000 	C:\WINDOWS\SYSTEM32\DDRAW.dll
+0x00007ffdb73b0000 - 0x00007ffdb73b8000 	C:\WINDOWS\SYSTEM32\DCIMAN32.dll
+0x00007ffdd63e0000 - 0x00007ffdd6476000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007ffdd5a40000 - 0x00007ffdd5a62000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x00007ffdd92b0000 - 0x00007ffdd940a000 	C:\WINDOWS\system32\MSCTF.dll
+0x0000000052ed0000 - 0x0000000054c19000 	C:\WINDOWS\SYSTEM32\nvoglv64.DLL
+0x00007ffdd8950000 - 0x00007ffdd8d79000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x00007ffdd54e0000 - 0x00007ffdd54f3000 	C:\WINDOWS\SYSTEM32\WTSAPI32.dll
+0x00007ffdd5ad0000 - 0x00007ffdd5af7000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x00007ffdd7ed0000 - 0x00007ffdd7f25000 	C:\WINDOWS\system32\WINTRUST.dll
+0x00007ffdd7870000 - 0x00007ffdd7880000 	C:\WINDOWS\system32\MSASN1.dll
+0x00007ffdd8390000 - 0x00007ffdd8557000 	C:\WINDOWS\system32\CRYPT32.dll
+0x00007ffdd6ce0000 - 0x00007ffdd6d11000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x00007ffdd76b0000 - 0x00007ffdd7706000 	C:\WINDOWS\SYSTEM32\WINSTA.dll
+0x00007ffdd4ec0000 - 0x00007ffdd4f63000 	C:\WINDOWS\system32\dxgi.dll
+0x00007ffdd5030000 - 0x00007ffdd52d8000 	C:\WINDOWS\system32\d3d11.dll
+0x00007ffdaab30000 - 0x00007ffdabcac000 	C:\WINDOWS\SYSTEM32\nvwgf2umx.dll
+0x00007ffdd7720000 - 0x00007ffdd7749000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x0000000180000000 - 0x00000001802b7000 	C:\WINDOWS\system32\nvspcap64.dll
+0x00007ffdd8e70000 - 0x00007ffdd8fb3000 	C:\WINDOWS\system32\ole32.dll
+0x00007ffddaa90000 - 0x00007ffddab51000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x00007ffdb4d80000 - 0x00007ffdb4f0c000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: itay.test.Main
+java_class_path (initial): C:\Users\home\Desktop\coding\CustomLibraries\Sparky4j-core Native\bin
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Motion Control\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Android;C:\Windows\System32;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\home\Desktop;
+USERNAME=home
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 10586 (10.0.10586.0)
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 15124760k(7659896k free), swap 17484056k(8462888k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.73-b02) for windows-amd64 JRE (1.8.0_73-b02), built on Jan 29 2016 17:38:49 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Apr 01 00:14:34 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

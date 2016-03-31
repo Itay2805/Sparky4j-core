@@ -8,10 +8,12 @@ public class Renderable2D {
 	
 	private long nativeHandle;
 	
-	public Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader shader) {
-		bind(position, size, color, shader);
+	public Renderable2D(Vector3 position, Vector2 size, Vector4 color) {
+		bind(position, size, color);
 	}
 	
-	private native void bind(Vector3 position, Vector2 size, Vector4 color, Shader shader);
+	protected Renderable2D() {}
+	
+	private native void bind(Vector3 position, Vector2 size, Vector4 color);
 	
 }

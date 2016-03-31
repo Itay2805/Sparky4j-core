@@ -21,15 +21,19 @@
   <ItemGroup>
     <ClInclude Include="jni\sp_sparky4j_core_FileUtils.h" />
     <ClInclude Include="jni\sp_sparky4j_core_GL.h" />
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_BatchRenderer2D.h" />
     <ClInclude Include="jni\sp_sparky4j_core_graphics_Renderable2D.h" />
     <ClInclude Include="jni\sp_sparky4j_core_graphics_Shader.h" />
     <ClInclude Include="jni\sp_sparky4j_core_graphics_Simple2DRenderer.h" />
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_Sprite.h" />
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_StaticSprite.h" />
     <ClInclude Include="jni\sp_sparky4j_core_graphics_Window.h" />
     <ClInclude Include="jni\handle.h" />
     <ClInclude Include="jni\sp_sparky4j_core_maths_Matrix4.h" />
     <ClInclude Include="jni\sp_sparky4j_core_maths_Vector2.h" />
     <ClInclude Include="jni\sp_sparky4j_core_maths_Vector3.h" />
     <ClInclude Include="jni\sp_sparky4j_core_maths_Vector4.h" />
+    <ClInclude Include="src\graphics\BatchRenderer2d.h" />
     <ClInclude Include="src\graphics\buffers\buffer.h" />
     <ClInclude Include="src\graphics\buffers\indexbuffer.h" />
     <ClInclude Include="src\graphics\buffers\vertexarray.h" />
@@ -37,6 +41,8 @@
     <ClInclude Include="src\graphics\renderer2d.h" />
     <ClInclude Include="src\graphics\shader.h" />
     <ClInclude Include="src\graphics\simple2drenderer.h" />
+    <ClInclude Include="src\graphics\sprite.h" />
+    <ClInclude Include="src\graphics\static_sprite.h" />
     <ClInclude Include="src\graphics\window.h" />
     <ClInclude Include="src\maths\mat4.h" />
     <ClInclude Include="src\maths\maths.h" />
@@ -49,19 +55,25 @@
   <ItemGroup>
     <ClCompile Include="jni\sp_sparky4j_core_FileUtils.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_GL.cpp" />
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_BatchRenderer2D.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_graphics_Renderable2D.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_graphics_Shader.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_graphics_Simple2DRenderer.cpp" />
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_Sprite.cpp" />
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_StaticSprite.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_graphics_Window.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_maths_Matrix4.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_maths_Vector2.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_maths_Vector3.cpp" />
     <ClCompile Include="jni\sp_sparky4j_core_maths_Vector4.cpp" />
+    <ClCompile Include="src\graphics\BatchRenderer2d.cpp" />
     <ClCompile Include="src\graphics\buffers\buffer.cpp" />
     <ClCompile Include="src\graphics\buffers\indexbuffer.cpp" />
     <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
     <ClCompile Include="src\graphics\simple2drenderer.cpp" />
+    <ClCompile Include="src\graphics\sprite.cpp" />
+    <ClCompile Include="src\graphics\static_sprite.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\maths\mat4.cpp" />
     <ClCompile Include="src\maths\vec2.cpp" />

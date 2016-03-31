@@ -93,6 +93,24 @@
     <ClInclude Include="jni\sp_sparky4j_core_graphics_Simple2DRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\graphics\static_sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_StaticSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\BatchRenderer2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_BatchRenderer2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\sp_sparky4j_core_graphics_Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\graphics\window.cpp">
@@ -153,6 +171,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="jni\sp_sparky4j_core_graphics_Simple2DRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\static_sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_StaticSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\BatchRenderer2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_BatchRenderer2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\sp_sparky4j_core_graphics_Sprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     sp_sparky4j_core_graphics_Renderable2D
  * Method:    bind
- * Signature: (Lsp/sparky4j/core/maths/Vector3;Lsp/sparky4j/core/maths/Vector2;Lsp/sparky4j/core/maths/Vector4;Lsp/sparky4j/core/graphics/Shader;)V
+ * Signature: (Lsp/sparky4j/core/maths/Vector3;Lsp/sparky4j/core/maths/Vector2;Lsp/sparky4j/core/maths/Vector4;)V
  */
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_bind
-  (JNIEnv *, jobject, jobject, jobject, jobject, jobject);
+  (JNIEnv *, jobject, jobject, jobject, jobject);
 
 #ifdef __cplusplus
 }

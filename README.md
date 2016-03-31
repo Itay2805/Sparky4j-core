@@ -1,5 +1,5 @@
 # Sparky4j-core
-A Java wrapper for the Cherno's Game Enigne!
+The First Java wrapper for The Cherno's Game Enigne!
 
 This uses the original code and some JNI(Java Native Interface) for using the Engine inside Java!
 
