@@ -17,11 +17,35 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
-	* Method:    nativeSubmit
+	* Method:    push
+	* Signature: (Lsp/sparky4j/core/maths/Matrix4;Z)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_push
+		(JNIEnv *, jobject, jobject, jboolean);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+	* Method:    pop
+	* Signature: ()V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_pop
+		(JNIEnv *, jobject);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+	* Method:    submit
 	* Signature: (Lsp/sparky4j/core/graphics/Renderable2D;)V
 	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeSubmit
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_submit
 		(JNIEnv *, jobject, jobject);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+	* Method:    flush
+	* Signature: ()V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_flush
+		(JNIEnv *, jobject);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
@@ -29,14 +53,6 @@ extern "C" {
 	* Signature: ()V
 	*/
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_begin
-		(JNIEnv *, jobject);
-
-	/*
-	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
-	* Method:    nativeFlush
-	* Signature: ()V
-	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeFlush
 		(JNIEnv *, jobject);
 
 	/*

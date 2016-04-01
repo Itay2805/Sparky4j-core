@@ -1,6 +1,6 @@
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\vc140.pdb
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\vc140.idb
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_simple2drenderer.obj
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_sprite.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_staticsprite.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_window.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_maths_matrix4.obj
@@ -25,6 +25,7 @@ c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\d
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_batchrenderer2d.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_renderable2d.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_shader.obj
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\debug\sp_sparky4j_core_graphics_simple2drenderer.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\debug\sparky4j-core.ilk
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\debug\sparky4j-core.dll
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\debug\sparky4j-core.pdb

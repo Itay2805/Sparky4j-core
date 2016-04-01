@@ -7,20 +7,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_MAX_SPRITES
-#define sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_MAX_SPRITES 60000L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_VERTEX_SIZE
-#define sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_VERTEX_SIZE 28L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_SPRITE_SIZE
-#define sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_SPRITE_SIZE 112L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_BUFFER_SIZE
-#define sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_BUFFER_SIZE 6720000L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_INDICES_SIZE
-#define sp_sparky4j_core_graphics_BatchRenderer2D_RENDERER_INDICES_SIZE 360000L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_SHADER_VERTEX_INDEX
-#define sp_sparky4j_core_graphics_BatchRenderer2D_SHADER_VERTEX_INDEX 0L
-#undef sp_sparky4j_core_graphics_BatchRenderer2D_SHADER_COLOR_INDEX
-#define sp_sparky4j_core_graphics_BatchRenderer2D_SHADER_COLOR_INDEX 1L
 /*
  * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
  * Method:    bind
@@ -31,11 +17,35 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_bind
 
 /*
  * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
- * Method:    nativeSubmit
+ * Method:    push
+ * Signature: (Lsp/sparky4j/core/maths/Matrix4;Z)V
+ */
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_push
+  (JNIEnv *, jobject, jobject, jboolean);
+
+/*
+ * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+ * Method:    pop
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_pop
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+ * Method:    submit
  * Signature: (Lsp/sparky4j/core/graphics/Renderable2D;)V
  */
-JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeSubmit
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_submit
   (JNIEnv *, jobject, jobject);
+
+/*
+ * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+ * Method:    flush
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_flush
+  (JNIEnv *, jobject);
 
 /*
  * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
@@ -43,14 +53,6 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeSubm
  * Signature: ()V
  */
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_begin
-  (JNIEnv *, jobject);
-
-/*
- * Class:     sp_sparky4j_core_graphics_BatchRenderer2D
- * Method:    nativeFlush
- * Signature: ()V
- */
-JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_nativeFlush
   (JNIEnv *, jobject);
 
 /*

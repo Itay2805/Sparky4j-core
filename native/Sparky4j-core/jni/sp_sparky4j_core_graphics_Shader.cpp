@@ -10,6 +10,8 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_bind
 	const char* vertPathChars = env->GetStringUTFChars(vertPath, false);
 	const char* fragPathChars = env->GetStringUTFChars(fragPath, false);
 	Shader* shader = new Shader(vertPathChars, fragPathChars);
+	env->ReleaseStringUTFChars(vertPath, vertPathChars);
+	env->ReleaseStringUTFChars(fragPath, fragPathChars);
 	setHandle(env, obj, shader);
 }
 

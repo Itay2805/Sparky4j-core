@@ -1,9 +1,37 @@
-﻿  BatchRenderer2d.cpp
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\maths\maths_funcs.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+﻿  vec4.cpp
+  vec3.cpp
+  vec2.cpp
+  mat4.cpp
+  window.cpp
+  static_sprite.cpp
+  sprite.cpp
+  simple2drenderer.cpp
+  shader.cpp
+  vertexarray.cpp
+  indexbuffer.cpp
+  buffer.cpp
+  BatchRenderer2d.cpp
+  sp_sparky4j_core_maths_Vector4.cpp
+  sp_sparky4j_core_maths_Vector3.cpp
+  sp_sparky4j_core_maths_Vector2.cpp
+  sp_sparky4j_core_maths_Matrix4.cpp
+  sp_sparky4j_core_graphics_Window.cpp
+  sp_sparky4j_core_graphics_StaticSprite.cpp
+  sp_sparky4j_core_graphics_Sprite.cpp
   Generating Code...
   Compiling...
+  sp_sparky4j_core_graphics_Simple2DRenderer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\sp_sparky4j_core_graphics_simple2drenderer.cpp(31): warning C4800: 'jboolean': forcing value to bool 'true' or 'false' (performance warning)
+  sp_sparky4j_core_graphics_Shader.cpp
+  sp_sparky4j_core_graphics_Renderable2D.cpp
   sp_sparky4j_core_graphics_BatchRenderer2D.cpp
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\maths\maths_funcs.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\sp_sparky4j_core_graphics_batchrenderer2d.cpp(18): warning C4800: 'jboolean': forcing value to bool 'true' or 'false' (performance warning)
+  sp_sparky4j_core_GL.cpp
+  sp_sparky4j_core_FileUtils.cpp
   Generating Code...
-  Sparky4j-core.vcxproj -> c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.dll
-  Sparky4j-core.vcxproj -> c:\users\home\documents\visual studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.pdb (Partial PDB)
+     Creating library C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.lib and object C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Debug\vc120.pdb'; linking object as if no debug info
+  Sparky4j-core.vcxproj -> C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.dll
+  Sparky4j-core.vcxproj -> C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Debug\Sparky4j-core.pdb (Partial PDB)

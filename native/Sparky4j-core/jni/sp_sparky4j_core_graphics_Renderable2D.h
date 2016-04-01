@@ -15,6 +15,14 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_bind
 		(JNIEnv *, jobject, jobject, jobject, jobject);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Renderable2D
+	* Method:    submit
+	* Signature: (Lsp/sparky4j/core/graphics/Renderer2D;)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_submit
+		(JNIEnv *, jobject, jobject);
+
 #ifdef __cplusplus
 }
 #endif

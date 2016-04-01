@@ -6,7 +6,9 @@ using namespace sparky::graphics;
 
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_bindWindow
 (JNIEnv *env, jobject obj, jstring title, jint width, jint height) {
-	Window* window = new Window(env->GetStringUTFChars(title, false), width, height);
+	const char* chars = env->GetStringUTFChars(title, false);
+	Window* window = new Window(chars, width, height);
+	env->ReleaseStringUTFChars(title, chars);
 	setHandle(env, obj, window);
 }
 

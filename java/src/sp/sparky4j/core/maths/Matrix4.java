@@ -17,6 +17,15 @@ public class Matrix4 {
 	
 	public native Matrix4 multiply(Matrix4 other);
 	
+	/*
+	 * 
+	 *  I dont see the need for implementing this right away,
+	 *  I might implement this after I will finish all the Textures Stuff :)
+	 *  
+	public native Vector3 multiply(Vector3 result, Vector3 other);
+	public native Vector4 multiply(Vector4 result, Vector4 other);
+	*/
+	
 	public native float elements(int i);
 	public native void elements(int i, float value);
 	public native Vector4 getColumn(int i);

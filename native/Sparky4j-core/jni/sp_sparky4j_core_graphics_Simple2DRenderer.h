@@ -17,18 +17,34 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Simple2DRenderer
-	* Method:    nativeSubmit
+	* Method:    submit
 	* Signature: (Lsp/sparky4j/core/graphics/Renderable2D;)V
 	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_nativeSubmit
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_submit
 		(JNIEnv *, jobject, jobject);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Simple2DRenderer
-	* Method:    nativeFlush
+	* Method:    flush
 	* Signature: ()V
 	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_nativeFlush
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_flush
+		(JNIEnv *, jobject);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Simple2DRenderer
+	* Method:    push
+	* Signature: (Lsp/sparky4j/core/maths/Matrix4;Z)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_push
+		(JNIEnv *, jobject, jobject, jboolean);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Simple2DRenderer
+	* Method:    pop
+	* Signature: ()V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_pop
 		(JNIEnv *, jobject);
 
 #ifdef __cplusplus

@@ -14,3 +14,10 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_bind
 	Renderable2D* renderable = new Renderable2D(*positionVec, *sizeVec, *colorVec);
 	setHandle(env, obj, renderable);
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_submit
+(JNIEnv *env, jobject obj, jobject renderer) {
+	Renderer2D* rendererNat = getHandle<Renderer2D>(env, renderer);
+	Renderable2D* renderable = getHandle<Renderable2D>(env, obj);
+	renderable->submit(rendererNat);
+}

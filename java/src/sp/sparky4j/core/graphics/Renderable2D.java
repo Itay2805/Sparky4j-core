@@ -16,4 +16,6 @@ public class Renderable2D {
 	
 	private native void bind(Vector3 position, Vector2 size, Vector4 color);
 	
+	public native void submit(Renderer2D renderer2d);
+	
 }
