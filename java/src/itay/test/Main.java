@@ -89,40 +89,4 @@ public class Main {
 		}
 	}
 	
-	/*
-	 * Random random = new Random();
-		Window window = new Window("Sparky4J", 960, 540);
-		
-		Matrix4 ortho = Matrix4.orthographic(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
-		
-		Shader shader = new Shader("shaders/basic.vert", "shaders/basic.frag");
-		shader.enable();
-		shader.setUniformMat4("pr_matrix", ortho);
-		
-		List<Renderable2D> sprites = new ArrayList<>();
-		
-		for(float y = 0; y < 9.0f; y+= 0.05) {
-			for(float x = 0; x < 16.0f; x += 0.05) {
-				if(BATCH_RENDERER) {
-					sprites.add(new Sprite(x, y, 0.04f, 0.04f, new Vector4((float) (random.nextInt(0x7fff) % 1000 / 1000.0f), 0, 1, 1)));
-				}else {
-					sprites.add(new StaticSprite(x, y, 0.04f, 0.04f, new Vector4((float) (random.nextInt(0x7fff) % 1000 / 1000.0f), 0, 1, 1), shader));
-				}
-			}
-		}
-		
-		System.out.println(sprites.size());
-		
-		shader.setUniform2f("light_pos", new Vector2(4.0f, 1.5f));
-		shader.setUniform4f("colour", new Vector4(0.2f, 0.3f, 0.8f, 1.0f));
-		
-		BatchRenderer2D renderer = new BatchRenderer2D();
-		
-		Timer time = new Timer();
-		int frames = 0;
-		while(!window.closed()) {
-			
-		}
-	 *  */
-	
 }
