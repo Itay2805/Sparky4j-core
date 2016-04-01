@@ -3,6 +3,8 @@ The First Java wrapper for The Cherno's Game Enigne!
 
 This uses the original code and some JNI(Java Native Interface) for using the Engine inside Java!
 
+* Note, The engine is slower than the C/C++ version because of the way Java and JNI works. For example in the 50K test this engine getts only 35 FPS (optimized DLL) and 19 FPS (Debug DLL). 
+
 # How to use
 First of all, you can simply copy the Java project and edit it. This is the best way to use the library right now!
 
