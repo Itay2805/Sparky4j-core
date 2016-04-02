@@ -33,4 +33,4 @@ Some changes have to be made because of Java's diffrence from C/C++
 
 # Links
 * sparky game engine - https://github.com/TheCherno/Sparky
-* The Cherno youtube channel - https://www.youtube.com/channel/UCQ-W1KE9EYfdxhL6S4twUNw
+* The Cherno youtube channel - https://www.youtube.com/user/TheChernoProject
