@@ -4,6 +4,7 @@ import java.util.Random;
 
 import sp.sparky4j.core.graphics.Shader;
 import sp.sparky4j.core.graphics.Sprite;
+import sp.sparky4j.core.graphics.Texture;
 import sp.sparky4j.core.graphics.Window;
 import sp.sparky4j.core.graphics.layers.Group;
 import sp.sparky4j.core.maths.Matrix4;
@@ -18,6 +19,9 @@ public class Main {
 	static {
 		// GLFW library
 		System.loadLibrary("glfw3");
+		
+		// FreeImage library
+		System.loadLibrary("FreeImage");
 
 		// The basic library
 		/* For right now we will store the core stuff in sparky4j-core
@@ -44,7 +48,6 @@ public class Main {
 		shader.setUniform2f("light_pos", new Vector2(4.0f, 1.5f));
 		shader2.setUniform2f("light_pos", new Vector2(4.0f, 1.5f));
 		
-		
 		TileLayer layer = new TileLayer(shader);
 		if(TEST_50K_SPRITES) {			
 			for (float y = -9.0f; y < 9.0f; y += 0.1) { 
@@ -66,7 +69,10 @@ public class Main {
 			
 			layer.add(group);
 		}
-
+		
+		Texture texture = new Texture("test.png");
+		System.out.println(texture.getWidth() + ", " + texture.getHeight());
+		
 		Timer timer = new Timer();
 		int frames = 0;
 		while(!window.closed()) {

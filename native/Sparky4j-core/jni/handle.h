@@ -3,8 +3,7 @@
 
 static jfieldID getHandleField(JNIEnv *env, jobject obj)
 {
-	jclass c = env->GetObjectClass(obj);
-	return env->GetFieldID(c, "nativeHandle", "J");
+	return env->GetFieldID(env->GetObjectClass(obj), "nativeHandle", "J");
 }
 
 template <typename T>
