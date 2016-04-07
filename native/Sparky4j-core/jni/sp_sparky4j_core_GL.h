@@ -7,13 +7,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 	/*
 	* Class:     sp_sparky4j_core_GL
-	* Method:    glClearColor
-	* Signature: (FFFF)V
+	* Method:    glActiveTexture
+	* Signature: (I)V
 	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glClearColor
-		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat);
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glActiveTexture
+		(JNIEnv *, jclass, jint);
 
 	/*
 	* Class:     sp_sparky4j_core_GL
@@ -25,11 +26,11 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_GL
-	* Method:    glVertex2f
-	* Signature: (FF)V
+	* Method:    glClearColor
+	* Signature: (FFFF)V
 	*/
-	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glVertex2f
-		(JNIEnv *, jclass, jfloat, jfloat);
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glClearColor
+		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat);
 
 	/*
 	* Class:     sp_sparky4j_core_GL
@@ -38,6 +39,14 @@ extern "C" {
 	*/
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glEnd
 		(JNIEnv *, jclass);
+
+	/*
+	* Class:     sp_sparky4j_core_GL
+	* Method:    glVertex2f
+	* Signature: (FF)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_GL_glVertex2f
+		(JNIEnv *, jclass, jfloat, jfloat);
 
 #ifdef __cplusplus
 }

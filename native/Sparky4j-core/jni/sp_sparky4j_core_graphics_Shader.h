@@ -25,11 +25,27 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Shader
+	* Method:    setUniform1fv
+	* Signature: (Ljava/lang/String;[FI)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1fv
+		(JNIEnv *, jobject, jstring, jfloatArray, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Shader
 	* Method:    setUniform1i
 	* Signature: (Ljava/lang/String;I)V
 	*/
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1i
 		(JNIEnv *, jobject, jstring, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Shader
+	* Method:    setUniform1iv
+	* Signature: (Ljava/lang/String;[II)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1iv
+		(JNIEnv *, jobject, jstring, jintArray, jint);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Shader

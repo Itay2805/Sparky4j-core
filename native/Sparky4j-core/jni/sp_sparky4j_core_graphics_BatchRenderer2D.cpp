@@ -15,7 +15,7 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_push
 (JNIEnv *env, jobject obj, jobject matrix, jboolean override) {
 	BatchRenderer2D* renderer = getHandle<BatchRenderer2D>(env, obj);
 	mat4* mat = getHandle<mat4>(env, matrix);
-	renderer->push(*mat, override);
+	renderer->push(*mat, override == JNI_TRUE);
 }
 
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_pop

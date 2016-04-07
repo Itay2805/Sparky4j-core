@@ -8,6 +8,7 @@
 
 #include "../maths/maths.h"
 #include "shader.h"
+#include "texture.h"
 
 namespace sparky {
 	namespace graphics {
@@ -15,7 +16,8 @@ namespace sparky {
 		struct VertexData
 		{
 			maths::vec3 vertex;
-			// maths::vec4 color;
+			maths::vec2 uv;
+			float tid;
 			unsigned int color;
 		};
 
@@ -25,23 +27,36 @@ namespace sparky {
 			maths::vec3 m_Position;
 			maths::vec2 m_Size;
 			maths::vec4 m_Color;
+			std::vector<maths::vec2> m_UV;
+			Texture* m_Texture;
 		protected:
 			Renderable2D() { }
 		public:
 			Renderable2D(maths::vec3 position, maths::vec2 size, maths::vec4 color)
 				: m_Position(position), m_Size(size), m_Color(color)
-			{ }
+			{
+				setUVDefaults();
+			}
 
-			virtual ~Renderable2D() { }
+			virtual ~Renderable2D() { setUVDefaults(); }
 
 			virtual void submit(Renderer2D* renderer) const
 			{
 				renderer->submit(this);
 			}
 
-			inline const maths::vec3& getPosition() const { return m_Position; }
-			inline const maths::vec2& getSize() const { return m_Size; }
-			inline const maths::vec4& getColor() const { return m_Color; }
+			inline const maths::vec3& getPosition() const { return m_Position; };
+			inline const maths::vec2& getSize() const { return m_Size; };
+			inline const maths::vec4& getColor() const { return m_Color; };
+			inline const std::vector<maths::vec2>& getUV() const { return m_UV; };
+			inline const GLuint getTID() const { return m_Texture == nullptr ? 0 : m_Texture->getID(); };
+		private:
+			void setUVDefaults() {
+				m_UV.push_back(maths::vec2(0, 0));
+				m_UV.push_back(maths::vec2(0, 1));
+				m_UV.push_back(maths::vec2(1, 1));
+				m_UV.push_back(maths::vec2(1, 0));
+			};
 		};
 
 	}

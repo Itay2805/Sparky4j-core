@@ -16,7 +16,9 @@ public class Shader {
 	private native void bind(String vertPath, String fragPath);
 	
 	public native void setUniform1f(String name, float value);
+	public native void setUniform1fv(String name, float[] values, int count);
 	public native void setUniform1i(String name, int value);
+	public native void setUniform1iv(String name, int[] values, int count);
 	public native void setUniform2f(String name, Vector2 vector);
 	public native void setUniform3f(String name, Vector3 vector);
 	public native void setUniform4f(String name, Vector4 vector);

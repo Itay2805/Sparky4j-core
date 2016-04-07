@@ -28,7 +28,7 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_push
 (JNIEnv *env, jobject obj, jobject matrix, jboolean override) {
 	Simple2DRenderer* renderer = getHandle<Simple2DRenderer>(env, obj);
 	mat4* mat = getHandle<mat4>(env, matrix);
-	renderer->push(*mat, override);
+	renderer->push(*mat, override == JNI_TRUE);
 }
 
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Simple2DRenderer_pop

@@ -21,10 +21,30 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1f
 	shader->setUniform1f(env->GetStringUTFChars(name, false), value);
 }
 
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1fv
+(JNIEnv *env, jobject obj, jstring name, jfloatArray values, jint count) {
+	Shader* shader = getHandle<Shader>(env, obj);
+	const char* nameChars = env->GetStringUTFChars(name, false);
+	jfloat* value = env->GetFloatArrayElements(values, false);
+	shader->setUniform1fv(nameChars, value, count);
+	env->ReleaseFloatArrayElements(values, value, false);
+	env->ReleaseStringUTFChars(name, nameChars);
+}
+
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1i
 (JNIEnv *env, jobject obj, jstring name, jint value) {
 	Shader* shader = getHandle<Shader>(env, obj);
 	shader->setUniform1i(env->GetStringUTFChars(name, false), value);
+}
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform1iv
+(JNIEnv *env, jobject obj, jstring name, jintArray values, jint count) {
+	Shader* shader = getHandle<Shader>(env, obj);
+	const char* nameChars = env->GetStringUTFChars(name, false);
+	jint* value = env->GetIntArrayElements(values, false);
+	shader->setUniform1iv(nameChars, (int*)(value), count);
+	env->ReleaseIntArrayElements(values, value, false);
+	env->ReleaseStringUTFChars(name, nameChars);
 }
 
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_setUniform2f

@@ -12,4 +12,10 @@ public class Sprite extends Renderable2D {
 	
 	private native void bind(float x, float y, float width, float height, Vector4 color);
 	
+	public Sprite(float x, float y, float width, float height, Texture texture) {
+		bind(x, y, width, height, texture);
+	}
+	
+	private native void bind(float x, float y, float width, float height, Texture texture);
+	
 }
