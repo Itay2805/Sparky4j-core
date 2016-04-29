@@ -9,7 +9,7 @@ This uses the original code and some JNI(Java Native Interface) for using the En
 First of all, you can simply copy the Java project and edit it. This is the best way to use the library right now!
 
 To load the native libraries add this to your main class inside Java 
-```sh
+```java
 	static {
 		System.loadLibrary("FreeImage");
 		System.loadLibrary("glfw3");
