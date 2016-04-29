@@ -8,7 +8,7 @@ This uses the original code and some JNI(Java Native Interface) for using the En
 # How to use
 First of all, you can simply copy the Java project and edit it. This is the best way to use the library right now!
 
-If you want to use it in a new project, simply compile all the files inside the package (and sub packages) of `sp.sparky4j.core` to a jar file, After it make sure to attach the `FreeImage.dll`,  `glfw3.dll` and `sparky4j-core.dll` to the project.
+If you want to use it in a new project, simply add all of the files inside the java directory to your project (not including the Main class which is used for testing), After it make sure to attach the `FreeImage.dll`,  `glfw3.dll` and `sparky4j-core.dll` to the project.
 
 To load the native libraries add this to your main class inside Java 
 ```sh
