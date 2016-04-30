@@ -4,18 +4,21 @@ import sp.sparky4j.core.maths.Vector4;
 
 public class Sprite extends Renderable2D {
 	
-	private long nativeHandle;
-	
 	public Sprite(float x, float y, float width, float height, Vector4 color) {
-		bind(x, y, width, height, color);
+		nativeHandle = bind(x, y, width, height, color.x, color.y, color.z, color.w);
 	}
-	
-	private native void bind(float x, float y, float width, float height, Vector4 color);
 	
 	public Sprite(float x, float y, float width, float height, Texture texture) {
-		bind(x, y, width, height, texture);
+		nativeHandle = bind(x, y, width, height, texture.getNativeHandler());
 	}
 	
-	private native void bind(float x, float y, float width, float height, Texture texture);
+	private static native long bind(float x, float y,
+									float width, float height,
+									float xColor, float yColor, float zColor, float wColor);
+	
+	private static native long bind(float x, float y,
+									float width, float height,
+									long texture);
+
 	
 }

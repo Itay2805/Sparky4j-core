@@ -25,6 +25,4 @@ public class Mouse {
 	public static final int RIGHT    = MOUSE_2;
 	public static final int MIDDLE   = MOUSE_3;
 	
-	
-	
 }

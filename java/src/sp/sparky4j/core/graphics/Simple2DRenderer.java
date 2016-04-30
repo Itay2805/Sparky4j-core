@@ -2,29 +2,39 @@ package sp.sparky4j.core.graphics;
 
 import sp.sparky4j.core.maths.Matrix4;
 
-public class Simple2DRenderer implements Renderer2D {
+public class Simple2DRenderer extends Renderer2D {
 	
-	private long nativeHandle;
+	private long nativeHandler;
 	
 	public Simple2DRenderer() {
-		bind();
+		nativeHandler = bind();
 	}
 	
-	private native void bind();
+	private static native long bind();
 	
-	public native void submit(Renderable2D renderable2d);
-	public native void flush();
-
-	public void begin() {}
-	public void end() {}
-	
-	public void push(Matrix4 matrix) {
-		push(matrix, false);
+	public void submit(Renderable2D renderable) {
+		native_submit(nativeHandler, renderable.getNativeHandle());
 	}
 
-	public native void push(Matrix4 matrix, boolean override);
-	public native void pop();
+	public void flush() {
+		native_flush(nativeHandler);
+	}
 	
+	public void push(Matrix4 matrix, boolean override) {
+		native_push(nativeHandler, matrix.elements, override);
+	}
+
+	public void pop() {
+		native_pop(nativeHandler);
+	}
 	
+	private static native void native_submit(long handle, long renderable);
+	private static native void native_flush(long handle);
+	private static native void native_push(long handle, float[] elements, boolean override);
+	private static native void native_pop(long handle);
+	
+	public long getNativeHandler() {
+		return nativeHandler;
+	}
 
 }

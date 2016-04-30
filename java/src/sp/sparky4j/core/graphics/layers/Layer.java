@@ -11,7 +11,7 @@ import sp.sparky4j.core.maths.Matrix4;
 public class Layer {
 	
 	protected Renderer2D renderer;
-	protected List<Renderable2D> renderables;
+	protected List<Renderable2D> renderables = new ArrayList<>();
 	protected Shader shader;
 	protected Matrix4 projectionMatrix;
 	
@@ -19,7 +19,6 @@ public class Layer {
 		this.renderer = renderer;
 		this.shader = shader;
 		this.projectionMatrix = projectionMatrix;
-		this.renderables = new ArrayList<>();
 		shader.enable();
 		shader.setUniformMat4("pr_matrix", projectionMatrix);
 		shader.disable();

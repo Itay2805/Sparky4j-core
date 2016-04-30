@@ -2,32 +2,44 @@ package sp.sparky4j.core.maths;
 
 public class Vector2 {
 	
-	private long nativeHandle;
+	public float x, y;
 	
 	public Vector2() {
-		bind(0, 0);
+		this.x = 0.0f;
+		this.y = 0.0f;
 	}
 	
 	public Vector2(float x, float y) {
-		bind(x, y);
+		this.x = x;
+		this.y = y;
 	}
 	
-	private native void bind(float x, float y);
+	public Vector2 add(Vector2 other) {
+		this.x += other.x;
+		this.y += other.y;
+		return this;
+	}
 	
-	public native Vector2 add(Vector2 other);
-	public native Vector2 subtract(Vector2 other);
-	public native Vector2 multiply(Vector2 other);
-	public native Vector2 divide(Vector2 other);
+	public Vector2 subtract(Vector2 other) {
+		this.x -= other.x;
+		this.y -= other.y;
+		return this;
+	}
 	
-
+	public Vector2 multiply(Vector2 other) {		
+		this.x *= other.x;
+		this.y *= other.y;
+		return this;
+	}
+	
+	public Vector2 devide(Vector2 other) {		
+		this.x /= other.x;
+		this.y /= other.y;
+		return this;
+	}
+	
 	public String toString() {
-		return "vec2: (" + x() + ", " + y() + ")";
+		return "vec2: (" + x + ", " + y + ")";
 	}
-	
-	public native float x();
-	public native float y();
-	
-	public native void x(float x);
-	public native void y(float y);
 	
 }

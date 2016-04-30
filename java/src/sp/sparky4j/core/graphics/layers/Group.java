@@ -9,11 +9,10 @@ import sp.sparky4j.core.maths.Matrix4;
 
 public class Group extends Renderable2D {
 	
-	private List<Renderable2D> renderables;
+	private List<Renderable2D> renderables = new ArrayList<>();
 	private Matrix4 transformationMatrix;
 	
 	public Group(Matrix4 transformationMatrix) {
-		renderables = new ArrayList<>();
 		this.transformationMatrix = transformationMatrix;
 	}
 	
@@ -27,7 +26,7 @@ public class Group extends Renderable2D {
 		for(Renderable2D renderable : renderables)
 			renderable.submit(renderer);
 		
-		renderer.pop();
+			renderer.pop();
 	}
 	
 }

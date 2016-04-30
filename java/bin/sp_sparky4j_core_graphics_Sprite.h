@@ -10,18 +10,18 @@ extern "C" {
 /*
  * Class:     sp_sparky4j_core_graphics_Sprite
  * Method:    bind
- * Signature: (FFFFLsp/sparky4j/core/maths/Vector4;)V
+ * Signature: (FFFFFFFF)J
  */
-JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFLsp_sparky4j_core_maths_Vector4_2
-  (JNIEnv *, jobject, jfloat, jfloat, jfloat, jfloat, jobject);
+JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFFFFF
+  (JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat);
 
 /*
  * Class:     sp_sparky4j_core_graphics_Sprite
  * Method:    bind
- * Signature: (FFFFLsp/sparky4j/core/graphics/Texture;)V
+ * Signature: (FFFFJ)J
  */
-JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFLsp_sparky4j_core_graphics_Texture_2
-  (JNIEnv *, jobject, jfloat, jfloat, jfloat, jfloat, jobject);
+JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFJ
+  (JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jlong);
 
 #ifdef __cplusplus
 }

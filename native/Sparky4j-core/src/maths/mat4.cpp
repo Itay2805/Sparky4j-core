@@ -20,6 +20,12 @@ namespace sparky {
 			elements[3 + 3 * 4] = diagonal;
 		}
 
+		mat4::mat4(float* elements)
+		{
+			for (int i = 0; i < 4 * 4; i++)
+				this->elements[i] = elements[i];
+		}
+
 		mat4 mat4::identity()
 		{
 			return mat4(1.0f);

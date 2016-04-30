@@ -17,6 +17,7 @@ namespace sparky {
 
 			mat4();
 			mat4(float diagonal);
+			mat4(float* elements);
 
 			vec4 getColumn(int index)
 			{

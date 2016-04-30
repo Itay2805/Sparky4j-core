@@ -2,20 +2,17 @@ package sp.sparky4j.core.graphics;
 
 import sp.sparky4j.core.maths.Matrix4;
 
-/* TODO change this to abstract class (?) */
-public interface Renderer2D {
+public abstract class Renderer2D {
 	
-	/* 
-	 * TODO Change these so not every class will need 
-	 * to implement a native function for this!
-	 */
-	void push(Matrix4 matrix);
-	void push(Matrix4 matrix, boolean override);
-	void pop();
+	public void push(Matrix4 matrix) { push(matrix, false); }
+	public abstract void push(Matrix4 matrix, boolean override);
+	public abstract void pop();
 	
-	void begin();
-	void submit(Renderable2D renderable2d);
-	void end();
-	void flush();
+	public void begin() {}
+	public abstract void submit(Renderable2D renderable);
+	public void end() {}
+	public abstract void flush();
+	
+	public abstract long getNativeHandler();
 	
 }

@@ -1,0 +1,37 @@
+﻿  window.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\window.h(4): fatal error C1083: Cannot open include file: 'GLEW\glew.h': No such file or directory
+  texture.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\texture.h(3): fatal error C1083: Cannot open include file: 'FreeImage\FreeImage.h': No such file or directory
+  static_sprite.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\buffers\buffer.h(3): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  sprite.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\buffers\buffer.h(3): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  simple2drenderer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\renderer2d.h(4): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  shader.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\shader.h(5): fatal error C1083: Cannot open include file: 'GLEW\glew.h': No such file or directory
+  vertexarray.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\buffers\vertexarray.h(4): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  indexbuffer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\buffers\indexbuffer.h(3): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  buffer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\buffers\buffer.h(3): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  BatchRenderer2d.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\src\graphics\renderer2d.h(4): fatal error C1083: Cannot open include file: 'GLEW/glew.h': No such file or directory
+  sp_sparky4j_core_graphics_Window.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_window.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_Texture.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_texture.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_StaticSprite.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_staticsprite.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_Sprite.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_sprite.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_Simple2DRenderer.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_simple2drenderer.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_Shader.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_shader.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_Renderable2D.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_renderable2d.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  sp_sparky4j_core_graphics_BatchRenderer2D.cpp
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\jni\graphics\sp_sparky4j_core_graphics_batchrenderer2d.h(2): fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+  Generating Code...
