@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+C:\Users\home\Desktop\coding\Sparky4j\.metadata\.plugins\org.eclipse.jdt.core
-1807915597.index
-3294325816.index
