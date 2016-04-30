@@ -1,0 +1,20 @@
+package sp.sparky4j.core;
+
+import com.badlogic.jglfw.utils.SharedLibraryLoader;
+
+public class Sparky {
+	
+	public static boolean init = false;
+	public static SharedLibraryLoader loader = new SharedLibraryLoader();
+	
+	public static void init() {
+		if(init) {
+			System.err.println("Sparky already initialized!");
+			return;
+		}
+		System.out.println("Initializing sparky...");
+		
+		init = true;
+	}
+	
+}

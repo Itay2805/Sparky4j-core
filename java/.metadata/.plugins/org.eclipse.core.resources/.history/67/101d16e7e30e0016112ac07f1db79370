@@ -1,0 +1,17 @@
+package itay.sandbox;
+
+import sp.sparky4j.core.Sparky;
+import sp.sparky4j.core.graphics.Window;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Sparky.init();
+		Window window = new Window("Sandbox test!", 960, 540);
+		
+		while() {
+			
+		}
+	}
+	
+}

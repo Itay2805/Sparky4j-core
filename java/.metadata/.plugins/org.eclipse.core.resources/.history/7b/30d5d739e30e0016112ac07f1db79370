@@ -1,0 +1,16 @@
+package sp.sparky4j.core;
+
+import com.badlogic.jglfw.utils.SharedLibraryLoader;
+
+public class Sparky {
+	
+	public static boolean init = false;
+	public static SharedLibraryLoader loader = new SharedLibraryLoader();
+	
+	public static void init() {
+		if() {
+			
+		}
+	}
+	
+}

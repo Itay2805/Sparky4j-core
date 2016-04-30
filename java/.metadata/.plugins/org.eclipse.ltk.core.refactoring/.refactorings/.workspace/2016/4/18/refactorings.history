@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Sparky4j-core-natives&apos;" deleteContents="true" description="Delete resource &apos;Sparky4j-core-natives&apos;" element1="/Sparky4j-core-natives" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1462028607199"/>
+</session>

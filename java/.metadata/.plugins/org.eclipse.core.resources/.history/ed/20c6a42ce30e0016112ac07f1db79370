@@ -1,0 +1,8 @@
+package sp.sparky4j.core;
+
+public class Sparky {
+	
+	public static boolean init = false;
+	public static 
+	
+}
