@@ -1,5 +1,63 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Sparky4j-core Optimized.vcxproj).  This can lead to incorrect clean and rebuild behavior.
 cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  platform.c
+  texture-atlas.c
+ext\freetype-gl\texture-atlas.c(53): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(150): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(226): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(251): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(252): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(208): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(300): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+ext\freetype-gl\texture-atlas.c(327): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+ext\freetype-gl\texture-atlas.c(336): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+ext\freetype-gl\texture-atlas.c(345): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+  texture-font.c
+ext\freetype-gl\texture-font.c(93): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  utf8-utils.c
+  vector.c
+  autofit.c
+  ftbase.c
+  ftbbox.c
+  ftbitmap.c
+  ftdebug.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+  ftinit.c
+  ftlcdfil.c
+  ftmm.c
+  ftotval.c
+  ftpatent.c
+  ftpfr.c
+  Compiling...
+  ftstroke.c
+  ftsynth.c
+  ftsystem.c
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  bdf.c
+  ftcache.c
+  cff.c
+  type1cid.c
+  ftgzip.c
+  ftlzw.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  smooth.c
+  Compiling...
+  truetype.c
+  type1.c
+  type42.c
+  winfnt.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
   sp_sparky4j_core_graphics_BatchRenderer2D.cpp
   sp_sparky4j_core_graphics_Renderable2D.cpp
   sp_sparky4j_core_graphics_Shader.cpp
@@ -26,9 +84,7 @@ cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
      Creating library C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.lib and object C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.exp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  77 of 633 functions (12.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    11 functions had inline decision re-evaluated but remain unchanged
+  All 2000 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
 glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\vc120.pdb'; linking object as if no debug info
   Sparky4j-core Optimized.vcxproj -> C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.dll
