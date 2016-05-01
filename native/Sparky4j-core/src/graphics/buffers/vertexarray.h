@@ -1,26 +1,24 @@
 #pragma once
 
 #include <vector>
-#include <GLEW/glew.h>
+#include <GL/glew.h>
 
 #include "buffer.h"
 
-namespace sparky {
-	namespace graphics {
+namespace sparky { namespace graphics {
 
-		class VertexArray
-		{
-		private:
-			GLuint m_ArrayID;
-			std::vector<Buffer*> m_Buffers;
-		public:
-			VertexArray();
-			~VertexArray();
+	class VertexArray
+	{
+	private:
+		GLuint m_ArrayID;
+		std::vector<Buffer*> m_Buffers;
+	public:
+		VertexArray();
+		~VertexArray();
 
-			void addBuffer(Buffer* buffer, GLuint index);
-			void bind() const;
-			void unbind() const;
-		};
+		void addBuffer(Buffer* buffer, GLuint index);
+		void bind() const;
+		void unbind() const;
+	};
 
-	}
-}
+} }

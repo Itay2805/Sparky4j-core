@@ -24,7 +24,7 @@
 /*                                                                         */
 /***************************************************************************/
 
-
+#ifdef FT_MACINTOSH
 #ifndef __FTMAC_H__
 #define __FTMAC_H__
 
@@ -272,3 +272,4 @@ FT_END_HEADER
 
 
 /* END */
+#endif
