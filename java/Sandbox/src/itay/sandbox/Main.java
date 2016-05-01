@@ -3,12 +3,15 @@ package itay.sandbox;
 import java.util.Random;
 
 import sp.sparky4j.core.Sparky;
+import sp.sparky4j.core.graphics.Label;
 import sp.sparky4j.core.graphics.Shader;
 import sp.sparky4j.core.graphics.Sprite;
 import sp.sparky4j.core.graphics.Texture;
 import sp.sparky4j.core.graphics.Window;
+import sp.sparky4j.core.graphics.layers.Group;
 import sp.sparky4j.core.maths.Matrix4;
 import sp.sparky4j.core.maths.Vector2;
+import sp.sparky4j.core.maths.Vector3;
 import sp.sparky4j.core.maths.Vector4;
 import sp.sparky4j.core.util.Timer;
 
@@ -42,6 +45,13 @@ public class Main {
 			}
 		}
 		
+		Group g = new Group(Matrix4.translation(new Vector3(-15.8f, 7.0f, 0.0f)));
+		Label fps = new Label("", 0.4f ,0.4f, new Vector4(1, 0, 1, 1));
+		g.add(new Sprite(0, 0, 5, 1.5f, new Vector4(0.3f, 0.3f, 0.3f, 0.9f)));
+		g.add(fps);
+		
+		layer.add(g);
+		
 		int[] texIDs = {
 				0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 		};
@@ -64,6 +74,7 @@ public class Main {
 			frames++;
 			if(timer.elapsed() >= 1000) {
 				System.out.printf("%d fps\n", frames);
+				fps.text = frames + " fps";
 				frames = 0;
 				timer.reset();
 			}

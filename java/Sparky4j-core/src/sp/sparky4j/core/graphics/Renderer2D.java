@@ -1,6 +1,8 @@
 package sp.sparky4j.core.graphics;
 
 import sp.sparky4j.core.maths.Matrix4;
+import sp.sparky4j.core.maths.Vector3;
+import sp.sparky4j.core.maths.Vector4;
 
 public abstract class Renderer2D {
 	
@@ -10,6 +12,7 @@ public abstract class Renderer2D {
 	
 	public void begin() {}
 	public abstract void submit(Renderable2D renderable);
+	public void drawString(String text, Vector3 position, Vector4 color) {}
 	public void end() {}
 	public abstract void flush();
 	

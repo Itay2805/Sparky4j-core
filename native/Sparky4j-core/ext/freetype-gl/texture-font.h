@@ -1,7 +1,7 @@
 /* ============================================================================
  * Freetype GL - A C OpenGL Freetype engine
  * Platform:    Any
- * WWW:         https://github.com/rougier/freetype-gl
+ * WWW:         http://code.google.com/p/freetype-gl/
  * ----------------------------------------------------------------------------
  * Copyright 2011,2012 Nicolas P. Rougier. All rights reserved.
  *
@@ -35,7 +35,6 @@
 #define __TEXTURE_FONT_H__
 
 #include <stdlib.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -72,18 +71,17 @@ namespace ftgl {
 
 
 /**
- * A structure that hold a kerning value relatively to a Unicode
- * codepoint.
+ * A structure that hold a kerning value relatively to a charcode.
  *
- * This structure cannot be used alone since the (necessary) right
- * Unicode codepoint is implicitely held by the owner of this structure.
+ * This structure cannot be used alone since the (necessary) right charcode is
+ * implicitely held by the owner of this structure.
  */
 typedef struct kerning_t
 {
     /**
-     * Left Unicode codepoint in the kern pair in UTF-32 LE encoding.
+     * Left character code in the kern pair.
      */
-    uint32_t codepoint;
+    wchar_t charcode;
 
     /**
      * Kerning value (in fractional pixels).
@@ -134,9 +132,14 @@ typedef struct kerning_t
 typedef struct texture_glyph_t
 {
     /**
-     * Unicode codepoint this glyph represents in UTF-32 LE encoding.
+     * Wide character this glyph represents
      */
-    uint32_t codepoint;
+    wchar_t charcode;
+
+    /**
+     * Glyph id (used for display lists)
+     */
+    unsigned int id;
 
     /**
      * Glyph's width in pixels.
@@ -278,15 +281,14 @@ typedef struct texture_font_t
     int filtering;
 
     /**
-     * LCD filter weights
-     */
-    unsigned char lcd_weights[5];
-
-    /**
      * Whether to use kerning if available
      */
     int kerning;
 
+    /**
+     * LCD filter weights
+     */
+    unsigned char lcd_weights[5];
 
     /**
      * This field is simply used to compute a default line spacing (i.e., the
@@ -396,8 +398,8 @@ typedef struct texture_font_t
  * Request a new glyph from the font. If it has not been created yet, it will
  * be.
  *
- * @param self      A valid texture font
- * @param codepoint Character codepoint to be loaded in UTF-8 encoding.
+ * @param self     A valid texture font
+ * @param charcode Character codepoint to be loaded.
  *
  * @return A pointer on the new glyph or 0 if the texture atlas is not big
  *         enough
@@ -405,34 +407,33 @@ typedef struct texture_font_t
  */
   texture_glyph_t *
   texture_font_get_glyph( texture_font_t * self,
-                          const char * codepoint );
+                          wchar_t charcode );
 
 
 /**
  * Request the loading of several glyphs at once.
  *
- * @param self       A valid texture font
- * @param codepoints Character codepoints to be loaded in UTF-8 encoding. May
- *                   contain duplicates.
+ * @param self      a valid texture font
+ * @param charcodes character codepoints to be loaded.
  *
  * @return Number of missed glyph if the texture is not big enough to hold
  *         every glyphs.
  */
   size_t
   texture_font_load_glyphs( texture_font_t * self,
-                            const char * codepoints );
+                            const wchar_t * charcodes );
 
 /**
  * Get the kerning between two horizontal glyphs.
  *
- * @param self      A valid texture glyph
- * @param codepoint Character codepoint of the peceding character in UTF-8 encoding.
+ * @param self      a valid texture glyph
+ * @param charcode  codepoint of the peceding glyph
  *
  * @return x kerning value
  */
 float
 texture_glyph_get_kerning( const texture_glyph_t * self,
-                           const char * codepoint );
+                           const wchar_t charcode );
 
 
 /**
