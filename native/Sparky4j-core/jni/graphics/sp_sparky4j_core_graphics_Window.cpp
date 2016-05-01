@@ -36,10 +36,22 @@ JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isKeyPr
 	return window->isKeyPressed(keycode);
 }
 
+JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isKeyTyped
+(JNIEnv *env, jclass cls, jlong handle, jint keycode) {
+	Window* window = getHandle<Window>(handle);
+	return window->isKeyTyped(keycode);
+}
+
 JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isMouseButtonPressed
 (JNIEnv *env, jclass cls, jlong handle, jint button) {
 	Window* window = getHandle<Window>(handle);
 	return window->isMouseButtonPressed(button);
+}
+
+JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isMouseButtonClicked
+(JNIEnv *env, jclass cls, jlong handle, jint button) {
+	Window* window = getHandle<Window>(handle);
+	return window->isMouseButtonClicked(button);
 }
 
 JNIEXPORT jdouble JNICALL Java_sp_sparky4j_core_graphics_Window_native_1getMouseX
@@ -56,4 +68,16 @@ JNIEXPORT jdouble JNICALL Java_sp_sparky4j_core_graphics_Window_native_1getMouse
 	double x, y;
 	window->getMousePosition(x, y);
 	return y;
+}
+
+JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1width
+(JNIEnv *env, jclass cls, jlong handle) {
+	Window* window = getHandle<Window>(handle);
+	return window->getWidth();
+}
+
+JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1height
+(JNIEnv *env, jclass cls, jlong handle) {
+	Window* window = getHandle<Window>(handle);
+	return window->getHeight();
 }

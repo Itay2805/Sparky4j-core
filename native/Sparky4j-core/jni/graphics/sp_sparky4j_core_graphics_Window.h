@@ -53,10 +53,26 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Window
+	* Method:    native_isKeyTyped
+	* Signature: (JI)Z
+	*/
+	JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isKeyTyped
+		(JNIEnv *, jclass, jlong, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Window
 	* Method:    native_isMouseButtonPressed
 	* Signature: (JI)Z
 	*/
 	JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isMouseButtonPressed
+		(JNIEnv *, jclass, jlong, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Window
+	* Method:    native_isMouseButtonClicked
+	* Signature: (JI)Z
+	*/
+	JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isMouseButtonClicked
 		(JNIEnv *, jclass, jlong, jint);
 
 	/*
@@ -73,6 +89,22 @@ extern "C" {
 	* Signature: (J)D
 	*/
 	JNIEXPORT jdouble JNICALL Java_sp_sparky4j_core_graphics_Window_native_1getMouseY
+		(JNIEnv *, jclass, jlong);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Window
+	* Method:    native_get_width
+	* Signature: (J)I
+	*/
+	JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1width
+		(JNIEnv *, jclass, jlong);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Window
+	* Method:    native_get_height
+	* Signature: (J)I
+	*/
+	JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1height
 		(JNIEnv *, jclass, jlong);
 
 #ifdef __cplusplus

@@ -10,10 +10,10 @@ extern "C" {
 	/*
 	* Class:     sp_sparky4j_core_graphics_Sprite
 	* Method:    bind
-	* Signature: (FFFFFFFF)J
+	* Signature: (FFFFI)J
 	*/
-	JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFFFFF
-		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat);
+	JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFI
+		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jint);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Sprite

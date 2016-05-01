@@ -25,10 +25,10 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1su
 }
 
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1draw_1string
-(JNIEnv *env, jclass cls, jlong handle, jstring text, jfloat xPos, jfloat yPos, jfloat zPos, jfloat xColor, jfloat yColor, jfloat zColor, jfloat wColor) {
+(JNIEnv *env, jclass cls, jlong handle, jstring text, jfloat xPos, jfloat yPos, jfloat zPos, jint color) {
 	BatchRenderer2D* renderer = getHandle<BatchRenderer2D>(handle);
 	const char* textChars = env->GetStringUTFChars(text, NULL);
-	renderer->drawString(textChars, vec3(xPos, yPos, zPos), vec4(xColor, yColor, zColor, wColor));
+	renderer->drawString(textChars, vec3(xPos, yPos, zPos), color);
 	env->ReleaseStringUTFChars(text, textChars);
 }
 

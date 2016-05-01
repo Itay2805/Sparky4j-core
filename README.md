@@ -18,9 +18,8 @@ Some changes have to be made because of Java's diffrence from C/C++
   ` getMouseX() ` and ` getMouseY() `. You can also use `getMousePosition()` to get the position in a Vector2
 
 # Currently in progress
-* Java Side Font rendering
-* Trying to optimize the engine even more
-* Some Java Doc, I will do this from time to time.
+* Add the better font management
+* Add audio
 
 # Links
 * sparky game engine - https://github.com/TheCherno/Sparky

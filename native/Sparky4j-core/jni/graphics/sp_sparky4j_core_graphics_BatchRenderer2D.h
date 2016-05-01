@@ -34,10 +34,10 @@ extern "C" {
 	/*
 	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
 	* Method:    native_draw_string
-	* Signature: (JLjava/lang/String;FFFFFFF)V
+	* Signature: (JLjava/lang/String;FFFI)V
 	*/
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1draw_1string
-		(JNIEnv *, jclass, jlong, jstring, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat);
+		(JNIEnv *, jclass, jlong, jstring, jfloat, jfloat, jfloat, jint);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D

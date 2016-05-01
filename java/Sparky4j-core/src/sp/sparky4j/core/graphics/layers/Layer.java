@@ -39,4 +39,8 @@ public class Layer {
 		renderer.flush();
 	}
 	
+	public List<Renderable2D> getRenderables() {
+		return renderables;
+	}
+	
 }

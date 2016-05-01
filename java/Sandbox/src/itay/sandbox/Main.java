@@ -1,9 +1,11 @@
 package itay.sandbox;
 
+import java.util.List;
 import java.util.Random;
 
 import sp.sparky4j.core.Sparky;
 import sp.sparky4j.core.graphics.Label;
+import sp.sparky4j.core.graphics.Renderable2D;
 import sp.sparky4j.core.graphics.Shader;
 import sp.sparky4j.core.graphics.Sprite;
 import sp.sparky4j.core.graphics.Texture;
@@ -18,10 +20,11 @@ import sp.sparky4j.core.util.Timer;
 public class Main {
 	
 	public static void main(String[] args) {
-		// Initialize Sparky
 		Sparky.init();
 		
 		Window window = new Window("Sparky4j!", 960, 540);
+		
+		Matrix4 ortho = Matrix4.orthographic(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
 		
 		Shader shader = new Shader("shaders/basic.vert", "shaders/basic.frag");
 		shader.enable();
@@ -29,7 +32,7 @@ public class Main {
 		
 		TileLayer layer = new TileLayer(shader);
 		
-		Texture[] textures = {
+		Texture textures[] = {
 				new Texture("textures/test.png"),
 				new Texture("textures/tb.png"),
 				new Texture("textures/tc.png")
@@ -37,24 +40,24 @@ public class Main {
 		
 		for(float y = -9.0f; y < 9.0f; y++) {
 			for(float x = -16.0f; x < 16.0f; x++) {
-				if(rand() % 4 == 0) {
-					layer.add(new Sprite(x, y, 0.9f, 0.9f, new Vector4(rand() % 1000 / 1000.0f, 0, 1, 1)));
-				}else {
+				int r = rand() % 256;
+				
+				int col = 0xffff00 << 8 | r;
+				if(rand() % 4 == 0)
+					layer.add(new Sprite(x, y, 0.9f, 0.9f, col));
+				else
 					layer.add(new Sprite(x, y, 0.9f, 0.9f, textures[rand() % 3]));
-				}
 			}
 		}
 		
 		Group g = new Group(Matrix4.translation(new Vector3(-15.8f, 7.0f, 0.0f)));
-		Label fps = new Label("", 0.4f ,0.4f, new Vector4(1, 0, 1, 1));
-		g.add(new Sprite(0, 0, 5, 1.5f, new Vector4(0.3f, 0.3f, 0.3f, 0.9f)));
+		Label fps = new Label("", 0.4f, 0.4f, 0xffffffff);
+		g.add(new Sprite(0, 0, 5, 1.5f, 0x505050DD));
 		g.add(fps);
 		
 		layer.add(g);
 		
-		int[] texIDs = {
-				0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-		};
+		int texIDs[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		
 		shader.enable();
 		shader.setUniform1iv("textures", texIDs, 10);
@@ -62,21 +65,28 @@ public class Main {
 		
 		Timer timer = new Timer();
 		int frames = 0;
+		float t = 0.0f;
 		while(!window.closed()) {
+			t += 0.001f;
 			window.clear();
 			
-			double x = window.getMouseX();
-			double y = window.getMouseY();
-			shader.setUniform2f("light_pos", new Vector2((float)(x * 32.0f / 960.0f - 16.0f), (float)(9.0f - y * 18.0f / 540.0f)));
+			Vector2 xy = window.getMousePosition();
+			shader.setUniform2f("light_pos", new Vector2((float)(xy.x * 32.0f / window.getWidth() - 16.0f), (float)(9.0f - xy.y * 18.0f / window.getHeight())));
 			layer.render();
+			
+			List<Renderable2D> rs = layer.getRenderables();
+			for(int i = 0; i < rs.size(); i++) {
+				float c = (float) (Math.sin(t) / 2 + 0.5f);
+				rs.get(i).setColor(new Vector4(c, 0, 1, 1));
+			}
 			
 			window.update();
 			frames++;
 			if(timer.elapsed() >= 1000) {
-				System.out.printf("%d fps\n", frames);
 				fps.text = frames + " fps";
-				frames = 0;
+				System.out.println(frames + " fps");
 				timer.reset();
+				frames = 0;
 			}
 		}
 	}

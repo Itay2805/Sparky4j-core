@@ -5,9 +5,9 @@
 using namespace sparky::graphics;
 using namespace sparky::maths;
 
-JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFFFFF
-(JNIEnv *env, jclass cls, jfloat x, jfloat y, jfloat width, jfloat height, jfloat xColor, jfloat yColor, jfloat zColor, jfloat wColor) {
-	Sprite* sprite = new Sprite(x, y, width, height, vec4(xColor, yColor, zColor, wColor));
+JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFI
+(JNIEnv *env, jclass cls, jfloat x, jfloat y, jfloat width, jfloat height, jint color) {
+	Sprite* sprite = new Sprite(x, y, width, height, color);
 	return getPointer(sprite);
 }
 

@@ -10,10 +10,26 @@ extern "C" {
 	/*
 	* Class:     sp_sparky4j_core_graphics_Renderable2D
 	* Method:    bind
-	* Signature: (FFFFFFFFF)J
+	* Signature: (FFFFFI)J
 	*/
 	JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_bind
-		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat, jfloat);
+		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jfloat, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Renderable2D
+	* Method:    native_setColor
+	* Signature: (JI)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1setColor__JI
+		(JNIEnv *, jclass, jlong, jint);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Renderable2D
+	* Method:    native_setColor
+	* Signature: (JFFFF)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1setColor__JFFFF
+		(JNIEnv *, jclass, jlong, jfloat, jfloat, jfloat, jfloat);
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Renderable2D
