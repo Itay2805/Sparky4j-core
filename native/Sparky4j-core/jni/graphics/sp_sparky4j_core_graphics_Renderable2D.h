@@ -39,6 +39,14 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1submit
 		(JNIEnv *, jclass, jlong, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Renderable2D
+	* Method:    native_delete
+	* Signature: (J)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

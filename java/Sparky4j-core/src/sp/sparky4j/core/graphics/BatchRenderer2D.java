@@ -41,6 +41,10 @@ public class BatchRenderer2D extends Renderer2D {
 		native_pop(nativeHandler);
 	}
 	
+	protected void finalize() throws Throwable {
+		native_delete(nativeHandler);
+	}
+	
 	private static native void native_begin(long handle);
 	private static native void native_submit(long handle, long renderable);
 	private static native void native_draw_string(long handle, String text, float xPos, float yPos, float zPos, long font, int color);
@@ -48,6 +52,7 @@ public class BatchRenderer2D extends Renderer2D {
 	private static native void native_flush(long handle);
 	private static native void native_push(long handle, float[] elements, boolean override);
 	private static native void native_pop(long handle);
+	private static native void native_delete(long handle);
 	
 	public long getNativeHandler() {
 		return nativeHandler;

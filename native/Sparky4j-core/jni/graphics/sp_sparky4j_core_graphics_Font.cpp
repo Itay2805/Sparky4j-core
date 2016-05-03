@@ -13,3 +13,9 @@ JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Font_bind
 	env->ReleaseStringUTFChars(filename, filenameChars);
 	return getPointer(font);
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Font_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	Font* font = getHandle<Font>(handle);
+	delete font;
+}

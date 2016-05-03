@@ -64,9 +64,14 @@ public class Shader {
 		native_disable(nativeHandler);
 	}
 	
+	protected void finalize() throws Throwable {
+		native_delete(nativeHandler);
+	}
+	
 	private static native void native_enable(long handler);
 	private static native void native_disable(long handler);
-	
+	private static native void native_delete(long handle);
+
 	public long getNativeHandler() {
 		return nativeHandler;
 	}

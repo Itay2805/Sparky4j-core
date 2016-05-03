@@ -35,10 +35,15 @@ public class Renderable2D {
 		native_setColor(nativeHandle, color.x, color.y, color.z, color.w);
 	}
 	
+	protected void finalize() throws Throwable {
+		native_delete(nativeHandle);
+	}
+	
 	private static native void native_setColor(long handle, int color);
 	private static native void native_setColor(long handle, float x, float y, float z, float w);
 	private static native void native_submit(long handle, long renderer);
-	
+	private static native void native_delete(long handle);
+
 	public long getNativeHandle() {
 		return nativeHandle;
 	}

@@ -32,4 +32,11 @@ public class Font {
 		return nativeHandler;
 	}
 	
+	protected void finalize() throws Throwable {
+		native_delete(nativeHandler);
+	}
+	
+	private static native void native_delete(long handle);
+
+	
 }

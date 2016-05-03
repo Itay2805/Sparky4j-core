@@ -15,6 +15,14 @@ extern "C" {
 	JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Font_bind
 		(JNIEnv *, jclass, jstring, jstring, jint);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Font
+	* Method:    native_delete
+	* Signature: (J)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Font_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

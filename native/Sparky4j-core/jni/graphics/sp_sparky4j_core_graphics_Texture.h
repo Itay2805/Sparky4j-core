@@ -47,6 +47,14 @@ extern "C" {
 	JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Texture_native_1getHeight
 		(JNIEnv *, jclass, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Texture
+	* Method:    native_delete
+	* Signature: (J)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Texture_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

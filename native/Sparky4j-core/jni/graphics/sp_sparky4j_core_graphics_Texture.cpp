@@ -35,3 +35,10 @@ JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Texture_native_1getHeight
 	Texture* texture = getHandle<Texture>(handle);
 	return texture->getHeight();
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Texture_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	Texture* texture = getHandle<Texture>(handle);
+	delete texture;
+}
+

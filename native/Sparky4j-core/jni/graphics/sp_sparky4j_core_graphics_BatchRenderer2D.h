@@ -71,6 +71,14 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1pop
 		(JNIEnv *, jclass, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_BatchRenderer2D
+	* Method:    native_delete
+	* Signature: (J)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

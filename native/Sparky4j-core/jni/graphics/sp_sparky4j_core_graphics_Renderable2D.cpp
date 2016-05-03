@@ -30,3 +30,9 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1submi
 	Renderable2D* renderable = getHandle<Renderable2D>(handle);
 	nativeRenderer->submit(renderable);
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Renderable2D_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	Renderable2D* renderable = getHandle<Renderable2D>(handle);
+	delete renderable;
+}

@@ -58,3 +58,9 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1po
 	BatchRenderer2D* renderer = getHandle<BatchRenderer2D>(handle);
 	renderer->pop();
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_BatchRenderer2D_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	BatchRenderer2D* renderer = getHandle<BatchRenderer2D>(handle);
+	delete renderer;
+}

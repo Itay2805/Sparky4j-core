@@ -95,6 +95,14 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_native_1disable
 		(JNIEnv *, jclass, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Shader
+	* Method:    native_delete
+	* Signature: (J)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

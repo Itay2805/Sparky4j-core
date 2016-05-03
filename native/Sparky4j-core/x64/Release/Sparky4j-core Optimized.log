@@ -93,7 +93,7 @@ cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
      Creating library C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.lib and object C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.exp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  All 2282 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 2293 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
 glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\vc120.pdb'; linking object as if no debug info
   Sparky4j-core Optimized.vcxproj -> C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\x64\Release\Sparky4j-core.dll

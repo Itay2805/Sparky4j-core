@@ -99,3 +99,9 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_native_1disable
 	Shader* shader = getHandle<Shader>(handle);
 	shader->disable();
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Shader_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	Shader* shader = getHandle<Shader>(handle);
+	delete shader;
+}
