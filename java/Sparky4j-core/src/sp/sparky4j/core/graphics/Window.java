@@ -41,6 +41,7 @@ public class Window {
 	 */
 	public Window(String title, int width, int height) {
 		nativeHandler = bind(title, width, height);
+		FontManager.add(new Font("SourceSansPro", "engine/SourceSansPro-Light.ttf", 32));
 	}
 	
 	private static native long bind(String title, int width, int height);

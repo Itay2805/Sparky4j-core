@@ -11,7 +11,7 @@ public abstract class Renderer2D {
 	
 	public void begin() {}
 	public abstract void submit(Renderable2D renderable);
-	public void drawString(String text, Vector3 position, int color) {}
+	public void drawString(String text, Vector3 position, Font font, int color) {}
 	public void end() {}
 	public abstract void flush();
 	

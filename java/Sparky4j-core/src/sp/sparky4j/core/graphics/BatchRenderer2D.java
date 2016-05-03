@@ -21,8 +21,8 @@ public class BatchRenderer2D extends Renderer2D {
 		native_submit(nativeHandler, renderable.getNativeHandle());
 	}
 	
-	public void drawString(String text, Vector3 position, int color) {
-		native_draw_string(nativeHandler, text, position.x, position.y, position.z, color);
+	public void drawString(String text, Vector3 position, Font font, int color) {
+		native_draw_string(nativeHandler, text, position.x, position.y, position.z, font.getNativeHandler(), color);
 	}
 	
 	public void end() {
@@ -43,7 +43,7 @@ public class BatchRenderer2D extends Renderer2D {
 	
 	private static native void native_begin(long handle);
 	private static native void native_submit(long handle, long renderable);
-	private static native void native_draw_string(long handle, String text, float xPos, float yPos, float zPos, int color);
+	private static native void native_draw_string(long handle, String text, float xPos, float yPos, float zPos, long font, int color);
 	private static native void native_end(long handle);
 	private static native void native_flush(long handle);
 	private static native void native_push(long handle, float[] elements, boolean override);

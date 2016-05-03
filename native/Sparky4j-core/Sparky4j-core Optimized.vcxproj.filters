@@ -243,6 +243,15 @@
     <ClCompile Include="src\graphics\layers\tilelayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\graphics\font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\font_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\buffers\buffer.h">
@@ -633,6 +642,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ext\freetype\include\ttunpat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\font_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Font.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
