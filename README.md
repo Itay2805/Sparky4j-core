@@ -18,7 +18,6 @@ Some changes have to be made because of Java's diffrence from C/C++
   ` getMouseX() ` and ` getMouseY() `. You can also use `getMousePosition()` to get the position in a Vector2
 
 # Currently in progress
-* Add the better font management
 * Add audio
 
 # Links
