@@ -32,7 +32,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -70,9 +70,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\Sparky4j-core\ext\freetype-gl;C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\Sparky4j-core\ext\freetype\include;C:\Program Files\Java\jdk1.8.0_73\include\win32;C:\Program Files\Java\jdk1.8.0_73\include;C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\dependencies\x64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\dependencies\x64\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\Sparky4j-core\ext\freetype-gl;C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\Sparky4j-core\ext\freetype\include;C:\Program Files\Java\jdk1.8.0_73\include\win32;C:\Program Files\Java\jdk1.8.0_73\include;$(SolutionDir)dependencies\x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)dependencies\x64\libs;$(LibraryPath)</LibraryPath>
     <TargetName>Sparky4j-core</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\dependencies\x86\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\home\Documents\Visual Studio 2015\Projects\Sparky4j\dependencies\x86\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -170,9 +174,7 @@
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Font.cpp" />
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Renderable2D.cpp" />
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Shader.cpp" />
-    <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Simple2DRenderer.cpp" />
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Sprite.cpp" />
-    <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_StaticSprite.cpp" />
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Texture.cpp" />
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Window.cpp" />
     <ClCompile Include="src\graphics\BatchRenderer2d.cpp" />
@@ -180,15 +182,11 @@
     <ClCompile Include="src\graphics\buffers\indexbuffer.cpp" />
     <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />
     <ClCompile Include="src\graphics\font.cpp" />
-    <ClCompile Include="src\graphics\font_manager.cpp" />
-    <ClCompile Include="src\graphics\label.cpp" />
     <ClCompile Include="src\graphics\layers\group.cpp" />
     <ClCompile Include="src\graphics\layers\layer.cpp" />
     <ClCompile Include="src\graphics\layers\tilelayer.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
-    <ClCompile Include="src\graphics\simple2drenderer.cpp" />
     <ClCompile Include="src\graphics\sprite.cpp" />
-    <ClCompile Include="src\graphics\static_sprite.cpp" />
     <ClCompile Include="src\graphics\texture.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\maths\mat4.cpp" />
@@ -296,9 +294,7 @@
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Font.h" />
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Renderable2D.h" />
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Shader.h" />
-    <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Simple2DRenderer.h" />
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Sprite.h" />
-    <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_StaticSprite.h" />
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Texture.h" />
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Window.h" />
     <ClInclude Include="jni\handle.h" />
@@ -307,17 +303,13 @@
     <ClInclude Include="src\graphics\buffers\indexbuffer.h" />
     <ClInclude Include="src\graphics\buffers\vertexarray.h" />
     <ClInclude Include="src\graphics\font.h" />
-    <ClInclude Include="src\graphics\font_manager.h" />
-    <ClInclude Include="src\graphics\label.h" />
     <ClInclude Include="src\graphics\layers\group.h" />
     <ClInclude Include="src\graphics\layers\layer.h" />
     <ClInclude Include="src\graphics\layers\tilelayer.h" />
     <ClInclude Include="src\graphics\renderable2d.h" />
     <ClInclude Include="src\graphics\renderer2d.h" />
     <ClInclude Include="src\graphics\shader.h" />
-    <ClInclude Include="src\graphics\simple2drenderer.h" />
     <ClInclude Include="src\graphics\sprite.h" />
-    <ClInclude Include="src\graphics\static_sprite.h" />
     <ClInclude Include="src\graphics\texture.h" />
     <ClInclude Include="src\graphics\window.h" />
     <ClInclude Include="src\maths\mat4.h" />

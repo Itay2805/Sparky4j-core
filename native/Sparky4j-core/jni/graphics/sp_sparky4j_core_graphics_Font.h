@@ -17,6 +17,14 @@ extern "C" {
 
 	/*
 	* Class:     sp_sparky4j_core_graphics_Font
+	* Method:    native_set_scale
+	* Signature: (JFF)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Font_native_1set_1scale
+		(JNIEnv *, jclass, jlong, jfloat, jfloat);
+
+	/*
+	* Class:     sp_sparky4j_core_graphics_Font
 	* Method:    native_delete
 	* Signature: (J)V
 	*/

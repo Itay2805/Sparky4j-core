@@ -81,3 +81,9 @@ JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1height
 	Window* window = getHandle<Window>(handle);
 	return window->getHeight();
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1delete
+(JNIEnv *env, jclass cls, jlong handle) {
+	Window* window = getHandle<Window>(handle);
+	delete window;
+}

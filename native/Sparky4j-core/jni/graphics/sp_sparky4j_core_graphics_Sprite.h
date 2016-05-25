@@ -23,6 +23,14 @@ extern "C" {
 	JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFJ
 		(JNIEnv *, jclass, jfloat, jfloat, jfloat, jfloat, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Sprite
+	* Method:    native_set_position
+	* Signature: (JFFF)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_native_1set_1position
+		(JNIEnv *, jclass, jlong, jfloat, jfloat, jfloat);
+
 #ifdef __cplusplus
 }
 #endif

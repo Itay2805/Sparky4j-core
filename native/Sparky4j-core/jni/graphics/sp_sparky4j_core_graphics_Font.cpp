@@ -14,6 +14,12 @@ JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Font_bind
 	return getPointer(font);
 }
 
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Font_native_1set_1scale
+(JNIEnv *env, jclass clz, jlong handle, jfloat x, jfloat y) {
+	Font* font = getHandle<Font>(handle);
+	font->setScale(x, y);
+}
+
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Font_native_1delete
 (JNIEnv *env, jclass cls, jlong handle) {
 	Font* font = getHandle<Font>(handle);

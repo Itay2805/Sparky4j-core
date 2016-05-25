@@ -13,6 +13,10 @@ public class FontManager {
 		fonts.add(font);
 	}
 	
+	public static Font get() {
+		return fonts.get(0);
+	}
+	
 	public static Font get(String name) {
 		for(Font font : fonts) {
 			if(font.getName().equals(name))
@@ -31,7 +35,6 @@ public class FontManager {
 	
 	public static void clean() {
 		fonts.clear();
-		// TODO delete
 	}
 	
 }

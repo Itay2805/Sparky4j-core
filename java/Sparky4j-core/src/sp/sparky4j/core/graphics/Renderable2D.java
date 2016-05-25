@@ -23,7 +23,6 @@ public class Renderable2D {
 							 int color);
 	
 	public void submit(Renderer2D renderer) {
-		//native_submit(nativeHandle, renderer.getNativeHandler());
 		renderer.submit(this);
 	}
 	

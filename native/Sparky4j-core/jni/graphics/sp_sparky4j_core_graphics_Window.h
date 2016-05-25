@@ -107,6 +107,14 @@ extern "C" {
 	JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1height
 		(JNIEnv *, jclass, jlong);
 
+	/*
+	* Class:     sp_sparky4j_core_graphics_Window
+	* Method:    native_delete
+	* Signature: (J)I
+	*/
+	JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1delete
+		(JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

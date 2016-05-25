@@ -42,12 +42,12 @@ c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\r
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\winfnt.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\type42.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\type1.obj
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\sprite.obj
+c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\simple2drenderer.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\shader.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\tilelayer.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\layer.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\group.obj
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\label.obj
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\font_manager.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\font.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\vertexarray.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\indexbuffer.obj
@@ -69,8 +69,6 @@ c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\r
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\window.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\texture.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\static_sprite.obj
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\sprite.obj
-c:\users\home\documents\visual studio 2015\projects\sparky4j\sparky4j-core\x64\release\simple2drenderer.obj
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\release\sparky4j-core.dll
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\release\sparky4j-core.ipdb
 c:\users\home\documents\visual studio 2015\projects\sparky4j\x64\release\sparky4j-core.iobj

@@ -48,9 +48,6 @@
     <ClCompile Include="src\graphics\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\simple2drenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -75,13 +72,7 @@
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Renderable2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Simple2DRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\sprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\static_sprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\BatchRenderer2d.cpp">
@@ -91,9 +82,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Sprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_StaticSprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\texture.cpp">
@@ -231,9 +219,6 @@
     <ClCompile Include="ext\freetype-gl\vector.c">
       <Filter>Source Files\ext\freetype-gl</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\label.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\layers\group.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -244,9 +229,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\font.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\font_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="jni\graphics\sp_sparky4j_core_graphics_Font.cpp">
@@ -270,9 +252,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\simple2drenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\window.h">
@@ -311,13 +290,7 @@
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Renderable2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Simple2DRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\graphics\sprite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\static_sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\BatchRenderer2d.h">
@@ -327,9 +300,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Sprite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_StaticSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\texture.h">
@@ -379,9 +349,6 @@
     </ClInclude>
     <ClInclude Include="ext\freetype-gl\vector.h">
       <Filter>Header Files\ext\freetype-gl</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\label.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\layers\group.h">
       <Filter>Header Files</Filter>
@@ -645,9 +612,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\font.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\font_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Font.h">

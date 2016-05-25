@@ -16,6 +16,10 @@ public class Label extends Renderable2D {
 		this.font = font;
 	}
 	
+	public Label(String text, float x, float y, int color) {
+		this(text, x, y, FontManager.get("SourceSansPro"), color);
+	}
+	
 	public Label(String text, float x, float y, String font, int size, int color) {
 		this(text, x, y, FontManager.get(font), color);
 		validateFont(font, size);
