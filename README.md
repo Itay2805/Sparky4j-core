@@ -14,12 +14,12 @@ Just download the code and use the Java Sandbox project!
 # Changes
 Some changes have to be made because of Java's diffrence from C/C++
 
-* In the window class the method `getMousePosition(double &x, double &y)` is now splited to two methods
-  ` getMouseX() ` and ` getMouseY() `. You can also use `getMousePosition()` to get the position in a Vector2
+* In the Sprite class you will have access to the Position and Size using a set and get methods, also you have access to a move inside the sprite to add the given values to the sprite positio
+* Right now we don't have sound because of problems with adding the Gorilla Sound Library to the native side.
 
 # Currently in progress
 * ~~Add audio~~ because of problems with setting up the with Gorilla sound for 64 bit I will leave it out for now, if somone can setit up and send it to me it will b great!
-* Ep 24
+* Continue with the commits from the main repo of Sparky
 
 # Links
 * sparky game engine - https://github.com/TheCherno/Sparky
