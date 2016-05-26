@@ -37,6 +37,14 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1update
 
 /*
  * Class:     sp_sparky4j_core_graphics_Window
+ * Method:    native_updateInput
+ * Signature: (J)V
+ */
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1updateInput
+  (JNIEnv *, jclass, jlong);
+
+/*
+ * Class:     sp_sparky4j_core_graphics_Window
  * Method:    native_closed
  * Signature: (J)Z
  */
@@ -110,9 +118,9 @@ JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1height
 /*
  * Class:     sp_sparky4j_core_graphics_Window
  * Method:    native_delete
- * Signature: (J)I
+ * Signature: (J)V
  */
-JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1delete
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1delete
   (JNIEnv *, jclass, jlong);
 
 #ifdef __cplusplus

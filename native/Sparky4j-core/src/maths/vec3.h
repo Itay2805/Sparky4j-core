@@ -2,34 +2,41 @@
 
 #include <iostream>
 
-namespace sparky { namespace maths {
+namespace sparky {
+	namespace maths {
 
-	struct vec3
-	{
-		float x, y, z;
+		struct vec2;
 
-		vec3();
-		vec3(const float& x, const float& y, const float& z);
+		struct vec3
+		{
+			float x, y, z;
 
-		vec3& add(const vec3& other);
-		vec3& subtract(const vec3& other);
-		vec3& multiply(const vec3& other);
-		vec3& divide(const vec3& other);
+			vec3();
+			vec3(const float& x, const float& y, const float& z);
+			vec3(const vec2& other);
 
-		friend vec3 operator+(vec3 left, const vec3& right);
-		friend vec3 operator-(vec3 left, const vec3& right);
-		friend vec3 operator*(vec3 left, const vec3& right);
-		friend vec3 operator/(vec3 left, const vec3& right);
+			vec3& add(const vec3& other);
+			vec3& subtract(const vec3& other);
+			vec3& multiply(const vec3& other);
+			vec3& divide(const vec3& other);
 
-		bool operator==(const vec3& other);
-		bool operator!=(const vec3& other);
+			friend vec3 operator+(vec3 left, const vec3& right);
+			friend vec3 operator-(vec3 left, const vec3& right);
+			friend vec3 operator*(vec3 left, const vec3& right);
+			friend vec3 operator/(vec3 left, const vec3& right);
 
-		vec3& operator+=(const vec3& other);
-		vec3& operator-=(const vec3& other);
-		vec3& operator*=(const vec3& other);
-		vec3& operator/=(const vec3& other);
+			bool operator==(const vec3& other);
+			bool operator!=(const vec3& other);
 
-		friend std::ostream& operator<<(std::ostream& stream, const vec3& vector);
-	};
+			vec3& operator+=(const vec3& other);
+			vec3& operator-=(const vec3& other);
+			vec3& operator*=(const vec3& other);
+			vec3& operator/=(const vec3& other);
 
-} }
+			float distance(const vec3& other) const;
+
+			friend std::ostream& operator<<(std::ostream& stream, const vec3& vector);
+		};
+
+	}
+}

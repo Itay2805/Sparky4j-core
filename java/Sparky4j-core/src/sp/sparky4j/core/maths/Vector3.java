@@ -16,6 +16,12 @@ public class Vector3 {
 		this.z = z;
 	}
 	
+	public Vector3(Vector2 other) {
+		this.x = other.x;
+		this.y = other.y;
+		this.z = 0;
+	}
+	
 	public Vector3 add(Vector3 other) {
 		this.x += other.x;
 		this.y += other.y;
@@ -42,6 +48,13 @@ public class Vector3 {
 		this.y /= other.y;
 		this.z /= other.z;
 		return this;
+	}
+	
+	public float distance(Vector3 other) {
+		float a = x - other.x;
+		float b = y - other.y;
+		float c = z - other.z;
+		return (float) Math.sqrt(a * a + b * b + c * c);
 	}
 	
 	public String toString() {

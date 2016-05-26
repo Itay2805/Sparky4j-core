@@ -24,10 +24,13 @@ public class Window {
 		native_update(nativeHandler);
 	}
 	
+	public void updateInput() {
+		native_updateInput(nativeHandler);
+	}
+	
 	public boolean closed() {
 		return native_closed(nativeHandler);
 	}
-	
 	
 	public boolean isKeyPressed(int keycode) {
 		return native_isKeyPressed(nativeHandler, keycode);
@@ -66,6 +69,7 @@ public class Window {
 	
 	private static native void native_clear(long handle);
 	private static native void native_update(long handle);
+	private static native void native_updateInput(long handle);
 	private static native boolean native_closed(long handle);
 	private static native boolean native_isKeyPressed(long handle, int keycode);
 	private static native boolean native_isKeyTyped(long handle, int keycode);
@@ -79,6 +83,7 @@ public class Window {
 	
 	protected void finalize() throws Throwable {
 		FontManager.clean();
+		TextureManager.clear();
 		//SoundManager.clean();
 		native_delete(nativeHandler);
 	}

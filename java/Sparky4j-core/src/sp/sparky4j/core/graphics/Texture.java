@@ -4,8 +4,11 @@ public class Texture {
 	
 	private long nativeHandler;
 	
-	public Texture(String filename) {
+	private String name;
+	
+	public Texture(String name, String filename) {
 		nativeHandler = bind(filename);
+		this.name = name;
 	}
 	
 	private static native long bind(String filename);
@@ -24,6 +27,10 @@ public class Texture {
 	
 	public int getHeight() {
 		return native_getHeight(nativeHandler);
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	protected void finalize() throws Throwable {

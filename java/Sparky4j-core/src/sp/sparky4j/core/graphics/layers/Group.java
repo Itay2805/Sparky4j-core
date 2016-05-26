@@ -29,4 +29,8 @@ public class Group extends Renderable2D {
 			renderer.pop();
 	}
 	
+	public Matrix4 getTransformRef() {
+		return new Matrix4(transformationMatrix.elements);
+	}
+	
 }

@@ -260,12 +260,6 @@
     <ClInclude Include="src\maths\mat4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\maths\maths.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\maths_funcs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\maths\vec2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -615,6 +609,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="jni\graphics\sp_sparky4j_core_graphics_Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\maths.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

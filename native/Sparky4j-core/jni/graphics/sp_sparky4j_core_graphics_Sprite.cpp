@@ -25,3 +25,10 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_native_1set_1positi
 	sprite->position.y = y;
 	sprite->position.z = z;
 }
+
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_native_1set_1size
+(JNIEnv *env, jclass clz, jlong handle, jfloat x, jfloat y) {
+	Sprite* sprite = getHandle<Sprite>(handle);
+	sprite->size.x = x;
+	sprite->size.y = y;
+}

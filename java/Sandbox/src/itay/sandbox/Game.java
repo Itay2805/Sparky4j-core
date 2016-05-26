@@ -27,7 +27,7 @@ public class Game extends Sparky {
 		FontManager.get().setScale(window.getWidth() / 32.0f, window.getHeight() / 32.0f);
 		shader = new Shader("shaders/basic.vert", "shaders/basic.frag");
 		layer = new Layer(new BatchRenderer2D(), shader, Matrix4.orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));
-		sprite = new Sprite(0.0f, 0.0f, 4, 4, new Texture("textures/tb.png"));
+		sprite = new Sprite(0.0f, 0.0f, 4, 4, new Texture("Tex", "textures/tb.png"));
 		layer.add(sprite);
 		
 		fps = new Label("", -15.5f, 7.8f, 0xffffffff);

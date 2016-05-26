@@ -24,6 +24,12 @@ JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1update
 	window->update();
 }
 
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Window_native_1updateInput
+(JNIEnv *env, jclass clz, jlong handle) {
+	Window* window = getHandle<Window>(handle);
+	window->updateInput();
+}
+
 JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1closed
 (JNIEnv *env, jclass cls, jlong handle) {
 	Window* window = getHandle<Window>(handle);
@@ -57,17 +63,13 @@ JNIEXPORT jboolean JNICALL Java_sp_sparky4j_core_graphics_Window_native_1isMouse
 JNIEXPORT jdouble JNICALL Java_sp_sparky4j_core_graphics_Window_native_1getMouseX
 (JNIEnv *env, jclass cls, jlong handle) {
 	Window* window = getHandle<Window>(handle);
-	double x, y;
-	window->getMousePosition(x, y);
-	return x;
+	return window->getMousePosition().x;
 }
 
 JNIEXPORT jdouble JNICALL Java_sp_sparky4j_core_graphics_Window_native_1getMouseY
 (JNIEnv *env, jclass cls, jlong handle) {
 	Window* window = getHandle<Window>(handle);
-	double x, y;
-	window->getMousePosition(x, y);
-	return y;
+	return window->getMousePosition().y;
 }
 
 JNIEXPORT jint JNICALL Java_sp_sparky4j_core_graphics_Window_native_1get_1width

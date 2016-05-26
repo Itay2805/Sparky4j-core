@@ -31,6 +31,14 @@ JNIEXPORT jlong JNICALL Java_sp_sparky4j_core_graphics_Sprite_bind__FFFFJ
 JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_native_1set_1position
   (JNIEnv *, jclass, jlong, jfloat, jfloat, jfloat);
 
+/*
+ * Class:     sp_sparky4j_core_graphics_Sprite
+ * Method:    native_set_size
+ * Signature: (JFF)V
+ */
+JNIEXPORT void JNICALL Java_sp_sparky4j_core_graphics_Sprite_native_1set_1size
+  (JNIEnv *, jclass, jlong, jfloat, jfloat);
+
 #ifdef __cplusplus
 }
 #endif

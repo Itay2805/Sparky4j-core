@@ -69,6 +69,7 @@ public abstract class Sparky {
 			window.clear();
 			
 			if(updateTimer.elapsed() > (1.0f / 60.0f) * 1000) {
+				window.updateInput();
 				update();
 				updates++;
 				updateTimer.reset();
