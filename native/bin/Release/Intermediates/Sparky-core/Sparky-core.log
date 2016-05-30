@@ -1,0 +1,100 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  platform.c
+  texture-atlas.c
+ext\freetype-gl\texture-atlas.c(132): warning C4090: '=': different 'const' qualifiers
+  texture-font.c
+  vector.c
+  autofit.c
+  ftbase.c
+  ftbbox.c
+  ftbitmap.c
+  ftdebug.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+  ftinit.c
+  ftlcdfil.c
+  ftmm.c
+  ftotval.c
+  ftpatent.c
+  ftpfr.c
+  ftstroke.c
+  Compiling...
+  ftsynth.c
+  ftsystem.c
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  bdf.c
+  ftcache.c
+  cff.c
+  type1cid.c
+  ftgzip.c
+  ftlzw.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  smooth.c
+  truetype.c
+  Compiling...
+  type1.c
+  type42.c
+  winfnt.c
+  gc_common.c
+  gc_thread.c
+  ga_openal.c
+ext\gorilla-audio\devices\ga_openal.c(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+ext\gorilla-audio\devices\ga_openal.c(80): warning C4047: '!=': 'gc_uint32 *' differs in levels of indirection from 'unsigned int'
+  ga.c
+  gau.c
+  ga_stream.c
+  Application.cpp
+  Sound.cpp
+  SoundManager.cpp
+  Embedded.cpp
+  Event.cpp
+  KeyEvent.cpp
+  MouseEvent.cpp
+  BatchRenderer2D.cpp
+src\sp\graphics\BatchRenderer2D.cpp(80): warning C4244: 'argument': conversion from 'uint' to 'float', possible loss of data
+src\sp\graphics\BatchRenderer2D.cpp(83): warning C4244: 'argument': conversion from 'uint' to 'float', possible loss of data
+  BufferLayout.cpp
+  IndexBuffer.cpp
+  VertexArray.cpp
+  Font.cpp
+  FontManager.cpp
+  Framebuffer.cpp
+  Label.cpp
+  Group.cpp
+  Layer.cpp
+  Layer2D.cpp
+  MeshFactory.cpp
+  PostEffects.cpp
+  Compiling...
+  PostEffectsPass.cpp
+src\sp\graphics\postfx\PostEffectsPass.cpp(23): warning C4244: 'argument': conversion from 'uint' to 'float', possible loss of data
+  Shader.cpp
+  ShaderFactory.cpp
+  Sprite.cpp
+  Texture.cpp
+  TextureManager.cpp
+  Window.cpp
+  AABB.cpp
+  mat4.cpp
+  vec2.cpp
+  vec3.cpp
+  vec4.cpp
+  SPOpenGLBuffer.cpp
+  SPOpenGLRenderAPI.cpp
+  Win32Application.cpp
+  Win32Log.cpp
+  Win32Window.cpp
+src\platform\windows\Win32Window.cpp(131): warning C4244: 'argument': conversion from 'LONG' to 'const float', possible loss of data
+src\platform\windows\Win32Window.cpp(194): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+src\platform\windows\Win32Window.cpp(195): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Sparky-core.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky-core.lib

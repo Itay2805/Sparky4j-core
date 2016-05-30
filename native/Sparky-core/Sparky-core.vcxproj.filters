@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ext">
+      <UniqueIdentifier>{a0201be5-0538-47db-adf1-5761367e3df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\freetype">
+      <UniqueIdentifier>{56faf7f8-8254-4f6a-9ad1-27e3a63a4304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext">
+      <UniqueIdentifier>{240122e8-ff5a-4859-b6ec-cc5a2e677ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\freetype">
+      <UniqueIdentifier>{6d325892-0f9e-4423-9203-7f29dc240c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\freetype\FT_MODULES">
+      <UniqueIdentifier>{1002ad61-f9af-4a60-b4cb-5a4a9d84ec9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\freetype-gl">
+      <UniqueIdentifier>{d6c0ad29-0a77-42a1-b0c3-c475c6794d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\freetype-gl">
+      <UniqueIdentifier>{e284a0c4-13e2-4486-b802-af8b9570a5d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{3c225e5b-ea3d-4082-823d-d2d774744af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maths">
+      <UniqueIdentifier>{94af0ec4-1384-42f5-a526-526441f15917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{67569db1-5f00-4f44-a9a5-1dd9fffa251d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\buffers">
+      <UniqueIdentifier>{27cc6734-61b5-4c2f-a5c7-8f96c0c1eea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\layers">
+      <UniqueIdentifier>{f66c2c91-4e01-418b-b87f-43c177b2f2b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{c9e9f25f-b4fd-4949-803a-82dd774cf9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maths">
+      <UniqueIdentifier>{78a415a0-0a37-4f92-b336-9f277f70a832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics\buffers">
+      <UniqueIdentifier>{0bec2cda-dbb2-4ccf-9dab-f155ab912342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics\layers">
+      <UniqueIdentifier>{205820f6-83de-482c-83f7-3b9a33c3efc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2dd91781-8958-4f9b-b48b-e25c47fdc6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\gorilla-audio">
+      <UniqueIdentifier>{dbaa20e3-07d9-4ee9-a591-7217b603e3bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\gorilla-audio">
+      <UniqueIdentifier>{51d9a528-15c2-4272-8e4e-309c4fb1458a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{54ecd7b8-7e95-4776-8c0b-a1ce5dcd7bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{febda883-2525-4101-a89c-e3b28650dcbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\embedded">
+      <UniqueIdentifier>{4f2b3065-02bc-43f2-a152-b9c32a9f9d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\embedded\files">
+      <UniqueIdentifier>{879fc9f3-d8d7-4685-9ebc-d1d3fb478eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform">
+      <UniqueIdentifier>{af731d24-993c-42a2-958c-3c30bf7b7477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\win32">
+      <UniqueIdentifier>{4a166c17-e7e3-4bc9-9617-39ff33e9ece1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\app">
+      <UniqueIdentifier>{b0ed385a-3cff-4157-a9e0-3bed4d1f3cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\embedded">
+      <UniqueIdentifier>{4d5ffe50-56f6-4f33-83fc-0b1bf768e31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\shaders">
+      <UniqueIdentifier>{8b3b6764-8052-4f06-a5eb-723c635d1201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics\shaders">
+      <UniqueIdentifier>{bbf7d1bc-4bdb-4634-9ec6-0173ba64c92f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\freetype\src\autofit\autofit.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\bdf\bdf.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\cff\cff.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftbase.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftbitmap.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\cache\ftcache.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftdebug.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftfstype.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftgasp.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftglyph.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\gzip\ftgzip.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftinit.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\lzw\ftlzw.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftstroke.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftsystem.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\smooth\smooth.c">
+      <Filter>Source Files\ext\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftbbox.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftgxval.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftlcdfil.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftmm.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftotval.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftpatent.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftpfr.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\fttype1.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftwinfnt.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftxf86.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\pcf\pcf.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\pfr\pfr.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\psaux\psaux.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\pshinter\pshinter.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\psnames\psmodule.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\raster\raster.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\sfnt\sfnt.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\truetype\truetype.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\type1\type1.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\cid\type1cid.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\type42\type42.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\winfonts\winfnt.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype\src\base\ftsynth.c">
+      <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype-gl\platform.c">
+      <Filter>Source Files\ext\freetype-gl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype-gl\texture-atlas.c">
+      <Filter>Source Files\ext\freetype-gl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype-gl\texture-font.c">
+      <Filter>Source Files\ext\freetype-gl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\freetype-gl\vector.c">
+      <Filter>Source Files\ext\freetype-gl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\ga.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\devices\ga_openal.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\ga_stream.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\gau.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\common\gc_common.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\gorilla-audio\common\gc_thread.c">
+      <Filter>Source Files\ext\gorilla-audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\app\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\audio\Sound.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\audio\SoundManager.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\embedded\Embedded.cpp">
+      <Filter>Source Files\embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\events\Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\events\KeyEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\events\MouseEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\buffers\BufferLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\buffers\IndexBuffer.cpp">
+      <Filter>Source Files\graphics\buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\buffers\VertexArray.cpp">
+      <Filter>Source Files\graphics\buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\layers\Group.cpp">
+      <Filter>Source Files\graphics\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\layers\Layer.cpp">
+      <Filter>Source Files\graphics\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\layers\Layer2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\postfx\PostEffects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\postfx\PostEffectsPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\shaders\Shader.cpp">
+      <Filter>Source Files\graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\shaders\ShaderFactory.cpp">
+      <Filter>Source Files\graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\BatchRenderer2D.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Font.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\FontManager.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Framebuffer.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Label.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\MeshFactory.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Sprite.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Texture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\TextureManager.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\graphics\Window.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\maths\AABB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\maths\mat4.cpp">
+      <Filter>Source Files\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\maths\vec2.cpp">
+      <Filter>Source Files\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\maths\vec3.cpp">
+      <Filter>Source Files\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp\maths\vec4.cpp">
+      <Filter>Source Files\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\opengl\SPOpenGLBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\opengl\SPOpenGLRenderAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Win32Application.cpp">
+      <Filter>Source Files\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Win32Log.cpp">
+      <Filter>Source Files\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Win32Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\freetype\include\ft2build.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\config\ftconfig.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\config\ftheader.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\config\ftmodule.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\config\ftoption.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\config\ftstdlib.h">
+      <Filter>Header Files\ext\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\freetype-gl.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\opengl.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\platform.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\texture-atlas.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\texture-font.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\vec234.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype-gl\vector.h">
+      <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\ga.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\ga_internal.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\devices\ga_openal.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\gau.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\common\gc_common.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\common\gc_thread.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\gorilla-audio\common\gc_types.h">
+      <Filter>Header Files\ext\gorilla-audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\app\Application.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\audio\Sound.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\audio\SoundManager.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\embedded\Embedded.h">
+      <Filter>Header Files\embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\events\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\events\IEventListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\events\KeyEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\events\MouseEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\buffers\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\buffers\BufferLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\buffers\IndexBuffer.h">
+      <Filter>Header Files\graphics\buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\buffers\VertexArray.h">
+      <Filter>Header Files\graphics\buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\layers\Group.h">
+      <Filter>Header Files\graphics\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\layers\Layer.h">
+      <Filter>Header Files\graphics\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\layers\Layer2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\postfx\PostEffects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\postfx\PostEffectsPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\shaders\Shader.h">
+      <Filter>Header Files\graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\shaders\ShaderFactory.h">
+      <Filter>Header Files\graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\BatchRenderer2D.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Font.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\FontManager.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Framebuffer.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Label.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Mask.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\MeshFactory.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Renderable2D.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Renderer2D.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\SPRenderAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Sprite.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Texture.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\TextureManager.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\graphics\Window.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\AABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\mat4.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\maths.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\maths_func.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\tvec2.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\vec2.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\vec3.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\maths\vec4.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\utils\FileUtils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\utils\ImageLoad.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\utils\Log.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\utils\StringUtils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\utils\Timer.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\sparky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\sparkygl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sp\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\opengl\SPOpenGLBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SparkyCore-TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\sp\embedded\files\SourceSansPro-Light.embed">
+      <Filter>Source Files\embedded\files</Filter>
+    </None>
+    <None Include="src\platform\opengl\SPOpenGLRenderAPI.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\sp\graphics\shaders\default\gles\Default.shader" />
+    <None Include="src\sp\graphics\shaders\default\gles\Simple.shader" />
+    <None Include="src\sp\graphics\shaders\default\BasicLight.shader" />
+    <None Include="src\sp\graphics\shaders\default\Default.shader" />
+    <None Include="src\sp\graphics\shaders\default\Simple.shader" />
+  </ItemGroup>
+</Project>

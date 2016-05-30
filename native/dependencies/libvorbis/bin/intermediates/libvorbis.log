@@ -1,0 +1,25 @@
+﻿  analysis.c
+  bitrate.c
+  block.c
+  codebook.c
+  envelope.c
+  floor0.c
+  floor1.c
+  info.c
+  lookup.c
+  lpc.c
+  lsp.c
+  mapping0.c
+  mdct.c
+  psy.c
+  registry.c
+  res0.c
+  sharedbook.c
+  smallft.c
+  synthesis.c
+  tone.c
+  Compiling...
+  vorbisenc.c
+  vorbisfile.c
+  window.c
+  libvorbis.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Dependencies\libvorbis\bin\libvorbis.lib

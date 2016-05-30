@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  bitwise.c
+  framing.c
+  libogg.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Dependencies\libogg\bin\libogg.lib

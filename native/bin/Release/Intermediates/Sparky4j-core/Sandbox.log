@@ -1,0 +1,23 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  sp_audio_Sound.cpp
+  sp_audio_SoundManager.cpp
+  sp_graphics_BatchRenderer2D.cpp
+C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-core\src\sp/utils/FileUtils.h(14): warning C4390: ';': empty controlled statement found; is this the intent?
+  sp_graphics_Font.cpp
+src\graphics\sp_graphics_Font.cpp(37): warning C4244: 'return': conversion from 'const float' to 'jint', possible loss of data
+src\graphics\sp_graphics_Font.cpp(43): warning C4244: 'return': conversion from 'const float' to 'jint', possible loss of data
+src\graphics\sp_graphics_Font.cpp(49): warning C4244: 'return': conversion from 'float' to 'jint', possible loss of data
+  sp_graphics_Renderer2D.cpp
+C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-core\src\sp/utils/FileUtils.h(14): warning C4390: ';': empty controlled statement found; is this the intent?
+  sp_graphics_shaders_Shader.cpp
+C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-core\src\sp/utils/FileUtils.h(14): warning C4390: ';': empty controlled statement found; is this the intent?
+  sp_graphics_Texture.cpp
+  sp_graphics_Window.cpp
+  sp_utils_Log.cpp
+     Creating library C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.lib and object C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.exp
+MSVCRT.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  All 2859 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\vc120.pdb'; linking object as if no debug info
+  Sandbox.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.dll
