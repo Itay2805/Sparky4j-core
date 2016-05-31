@@ -16,7 +16,7 @@ public class Application {
 	
 	@SuppressWarnings("unused")
 	private boolean running, suspended;
-	private Timer timer, updateTimer;
+	private Timer Timer;
 	private int updatesPerSecond, framesPerSecond;
 	
 	private String name;
@@ -98,31 +98,30 @@ public class Application {
 	}
 	
 	private void run() {
-		timer = new Timer();
-		updateTimer = new Timer();
+		Timer = new Timer();
+		float timer = 0.0f;
+		float updateTimer = 0.0f;
+		float updateTick = 1.0f / 60.0f;
 		int frames = 0;
 		int updates = 0;
 		while(running) {
 			window.clear();
-			
-			if(updateTimer.elapsed() > (1.0f / 60.0f) * 1000) {
+			if(Timer.elapsed() - updateTimer > updateTick) {
 				window.updateInput();
 				onUpdate();
 				updates++;
-				updateTimer.reset();
+				updateTimer += updateTick;
 			}
-			
 			onRender();
 			frames++;
 			window.update();
-			
-			if(timer.elapsed() > 1000) {
+			if(Timer.elapsed() - timer > 1.0f) {
+				timer += 1.0f;
 				framesPerSecond = frames;
 				updatesPerSecond = updates;
 				frames = 0;
 				updates = 0;
 				onTick();
-				timer.reset();
 			}
 			if(window.closed())
 				running = false;

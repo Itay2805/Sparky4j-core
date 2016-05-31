@@ -2,6 +2,7 @@ package sp.graphics;
 
 import com.itay.wrapper.NativeClass;
 
+import sp.graphics.postfx.PostEffectsPass;
 import sp.maths.Matrix4;
 import sp.maths.Vector3;
 
@@ -47,8 +48,22 @@ public abstract class Renderer2D extends NativeClass {
 	private static native int native_getRenderTarget(long handler);
 	/* */
 	
-	// TODO posteffects
-	// TODO Mask
+	/* */
+	public void setPostEffects(boolean enabled) { native_setPostEffects(getNativeHandler(), enabled); }
+	public boolean getPostEffects() { return native_getPostEffects(getNativeHandler()); }
+	public void addPostEffectsPass(PostEffectsPass pass) { native_AddPostEffectsPass(getNativeHandler(), pass.getNativeHandler()); }
+	
+	private static native void native_setPostEffects(long handler, boolean enabled);
+	private static native boolean native_getPostEffects(long handler);
+	private static native void native_AddPostEffectsPass(long handler, long pass);
+	/* */
+	
+	/* */
+	public void setMask(Mask mask) { native_setMask(getNativeHandler(), mask.getNativeHandler()); }
+	
+	private static native void native_setMask(long handler, long mask);
+	/* */
+	
 	
 	/* */
 	public void begin() { native_begin(getNativeHandler()); }

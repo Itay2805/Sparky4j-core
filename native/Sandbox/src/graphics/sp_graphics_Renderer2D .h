@@ -41,6 +41,38 @@ extern "C" {
 
 	/*
 	* Class:     sp_graphics_Renderer2D
+	* Method:    native_setPostEffects
+	* Signature: (JZ)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1setPostEffects
+		(JNIEnv *, jclass, jlong, jboolean);
+
+	/*
+	* Class:     sp_graphics_Renderer2D
+	* Method:    native_getPostEffects
+	* Signature: (J)Z
+	*/
+	JNIEXPORT jboolean JNICALL Java_sp_graphics_Renderer2D_native_1getPostEffects
+		(JNIEnv *, jclass, jlong);
+
+	/*
+	* Class:     sp_graphics_Renderer2D
+	* Method:    native_AddPostEffectsPass
+	* Signature: (JJ)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1AddPostEffectsPass
+		(JNIEnv *, jclass, jlong, jlong);
+
+	/*
+	* Class:     sp_graphics_Renderer2D
+	* Method:    native_setMask
+	* Signature: (JJ)V
+	*/
+	JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1setMask
+		(JNIEnv *, jclass, jlong, jlong);
+
+	/*
+	* Class:     sp_graphics_Renderer2D
 	* Method:    native_begin
 	* Signature: (J)V
 	*/

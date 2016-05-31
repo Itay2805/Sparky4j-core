@@ -97,11 +97,16 @@
   <ItemGroup>
     <ClInclude Include="src\audio\sp_audio_Sound.h" />
     <ClInclude Include="src\audio\sp_audio_SoundManager.h" />
+    <ClInclude Include="src\graphics\postfx\sp_graphics_postfx_PostEffectsPass.h" />
     <ClInclude Include="src\graphics\sp_graphics_BatchRenderer2D.h" />
     <ClInclude Include="src\graphics\sp_graphics_Font.h" />
+    <ClInclude Include="src\graphics\sp_graphics_Framebuffer.h" />
+    <ClInclude Include="src\graphics\sp_graphics_Mask.h" />
+    <ClInclude Include="src\graphics\sp_graphics_Renderable2D.h" />
     <ClInclude Include="src\graphics\sp_graphics_Renderer2D .h" />
+    <ClInclude Include="src\graphics\sp_graphics_Sprite.h" />
     <ClInclude Include="src\handle.h" />
-    <ClInclude Include="src\graphics\sp_graphics_shaders_Shader.h" />
+    <ClInclude Include="src\graphics\shaders\sp_graphics_shaders_Shader.h" />
     <ClInclude Include="src\graphics\sp_graphics_Texture.h" />
     <ClInclude Include="src\graphics\sp_graphics_Window.h" />
     <ClInclude Include="src\util\sp_utils_Log.h" />
@@ -109,10 +114,15 @@
   <ItemGroup>
     <ClCompile Include="src\audio\sp_audio_Sound.cpp" />
     <ClCompile Include="src\audio\sp_audio_SoundManager.cpp" />
+    <ClCompile Include="src\graphics\postfx\sp_graphics_postfx_PostEffectsPass.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_BatchRenderer2D.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Font.cpp" />
+    <ClCompile Include="src\graphics\sp_graphics_Framebuffer.cpp" />
+    <ClCompile Include="src\graphics\sp_graphics_Mask.cpp" />
+    <ClCompile Include="src\graphics\sp_graphics_Renderable2D.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Renderer2D.cpp" />
-    <ClCompile Include="src\graphics\sp_graphics_shaders_Shader.cpp" />
+    <ClCompile Include="src\graphics\shaders\sp_graphics_shaders_Shader.cpp" />
+    <ClCompile Include="src\graphics\sp_graphics_Sprite.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Texture.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Window.cpp" />
     <ClCompile Include="src\util\sp_utils_Log.cpp" />

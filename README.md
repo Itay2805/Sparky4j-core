@@ -6,7 +6,7 @@ This uses the original code and some JNI(Java Native Interface) for using the En
 After alot of optimization, The engine has about the same as the if you would to use the C++ engine! Of course I am still working to optimize the engine even more!
 
 # How to use
-Just download the code, and compile the Java project. Also the java project has a Game class and a Test Layer class for you to try out
+Just use the Sandbox project, It should be ready to use.
 
 * Note that the DLLs are compiled for 32bit. So you might need to download 32bit JDK
 
@@ -19,10 +19,7 @@ Just download the code, and compile the Java project. Also the java project has 
 Some changes have to be made because of Java's diffrence from C/C++
 
 # Currently in progress
-- [x] Wrap the Mask class
-- [ ] Wrap the Renderable2D class
-- [ ] Wrap the Sprite class
-- [x] Wrap all of the PostFX stuff
+- [ ] Port ChernoCraft Example
 - [ ] Wrap the SPRenderAPI and make SPOpenGLRenderAPI
 - [ ] Optimize (Probably will stay in this list forever :P)
 

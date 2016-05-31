@@ -7,10 +7,12 @@ import sp.maths.Vector2;
 public class Font extends NativeClass {
 	
 	private String name, filename;
+	private float size;
 	
 	public Font(String name, String filename, float size) {
 		super(bind(filename, size));
 		this.name = name;
+		this.size = size;
 	}
 	
 	/**
@@ -37,8 +39,8 @@ public class Font extends NativeClass {
 		return native_getID(getNativeHandler());
 	}
 	
-	public int getSize() {
-		return native_getSize(getNativeHandler());
+	public float getSize() {
+		return size;
 	}
 	
 	public void setScale(float x, float y) {
@@ -56,6 +58,5 @@ public class Font extends NativeClass {
 	private static native int native_getID(long handler);
 	private static native int native_getScaleX(long handler);
 	private static native int native_getScaleY(long handler);
-	private static native int native_getSize(long handler);
 	
 }

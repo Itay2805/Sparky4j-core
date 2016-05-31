@@ -31,7 +31,9 @@ public class Group extends Renderable2D {
 	}
 	
 	public Matrix4 getTransformRef() {
-		return transformationMatrix;
+		Matrix4 mat = new Matrix4();
+		mat.elements = transformationMatrix.elements;
+		return mat;
 	}
 	
 }

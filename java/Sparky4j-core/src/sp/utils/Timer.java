@@ -12,8 +12,8 @@ public class Timer {
 		startTime = System.currentTimeMillis();
 	}
 	
-	public long elapsed() {
-		return System.currentTimeMillis() - startTime;
+	public float elapsed() {
+		return (System.currentTimeMillis() - startTime) / 1000.0f;
 	}
 	
 }

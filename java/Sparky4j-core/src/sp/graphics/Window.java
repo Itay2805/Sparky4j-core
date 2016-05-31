@@ -136,6 +136,8 @@ public class Window extends NativeClass {
 	// TODO change to the other thing
 	public static Window instance;
 	
+	private int vsync = -1;
+	
 	public Window(String name, int width, int height) {
 		super(bind(name, width, height));
 		FontManager.add(new Font("SourceSansPro", "res/SourceSansPro-Light.ttf", 32));
@@ -163,8 +165,17 @@ public class Window extends NativeClass {
 	public void setMouseGrabbed(boolean grabbed) { native_setMouseGrabbed(getNativeHandler(), grabbed); }
 	public void setMouseCursor(int cursor) { native_setMouseCursor(getNativeHandler(), cursor); }
 	
-	public void setVsync(boolean enabled) { native_setVsync(getNativeHandler(), enabled); }
-	public boolean isVsync() { return native_isVsync(getNativeHandler()); }
+	public void setVsync(boolean enabled) {
+		native_setVsync(getNativeHandler(), enabled);
+		vsync = enabled ? 1 : 0;
+	}
+	
+	public boolean isVsync() {
+		if(vsync == -1) {
+			vsync = native_isVsync(getNativeHandler()) ? 1 : 0;
+		}
+		return vsync == 1;
+	}
 	
 	private static native void native_clear(long handler);
 	private static native void native_update(long handler);

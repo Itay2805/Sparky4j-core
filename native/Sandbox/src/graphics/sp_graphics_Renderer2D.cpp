@@ -34,6 +34,32 @@ JNIEXPORT jint JNICALL Java_sp_graphics_Renderer2D_native_1getRenderTarget
 	return (jint)renderer->GetRenderTarget();
 }
 
+JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1setPostEffects
+(JNIEnv *env, jclass cls, jlong handler, jboolean enabled) {
+	Renderer2D* renderer = getHandle<Renderer2D>(handler);
+	renderer->SetPostEffects(enabled == JNI_TRUE);
+}
+
+JNIEXPORT jboolean JNICALL Java_sp_graphics_Renderer2D_native_1getPostEffects
+(JNIEnv *env, jclass cls, jlong handler) {
+	Renderer2D* renderer = getHandle<Renderer2D>(handler);
+	return renderer->GetPostEffects();
+}
+
+JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1AddPostEffectsPass
+(JNIEnv *env, jclass cls, jlong handler, jlong pass) {
+	Renderer2D* renderer = getHandle<Renderer2D>(handler);
+	PostEffectsPass* natPass = getHandle<PostEffectsPass>(pass);
+	renderer->AddPostEffectsPass(natPass);
+}
+
+JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1setMask
+(JNIEnv *env, jclass cls, jlong handler, jlong mask) {
+	Renderer2D* renderer = getHandle<Renderer2D>(handler);
+	Mask* natMask = getHandle<Mask>(handler);
+	renderer->SetMask(natMask);
+}
+
 JNIEXPORT void JNICALL Java_sp_graphics_Renderer2D_native_1begin
 (JNIEnv *env, jclass cls, jlong handler) {
 	Renderer2D* renderer = getHandle<Renderer2D>(handler);

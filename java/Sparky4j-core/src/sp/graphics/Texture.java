@@ -28,6 +28,7 @@ public class Texture extends NativeClass {
 	}
 	
 	private String name;
+	private int width = -1, height = -1, id = -1;
 	
 	public Texture(int width, int height, int bits) {
 		super(bind(width, height, bits));
@@ -36,6 +37,11 @@ public class Texture extends NativeClass {
 	
 	public Texture(int width, int height) {
 		super(bind(width, height, 24));
+		this.name = "";
+	}
+	
+	public Texture(long handler) {
+		super(handler);
 		this.name = "";
 	}
 	
@@ -50,9 +56,28 @@ public class Texture extends NativeClass {
 	public String getName() { return name; }
 	public void bind() { native_bind(getNativeHandler()); }
 	public void unbind() { native_unbind(getNativeHandler()); }
-	public int getID() { return native_getID(getNativeHandler()); }
-	public int getWidth() { return native_getWidth(getNativeHandler()); }
-	public int getHeight() { return native_getHeight(getNativeHandler()); }
+	
+	public int getID() {
+		if(id == -1) {
+			id = native_getID(getNativeHandler());
+		}
+		return id;
+	}
+	
+	public int getWidth() {
+		if(width == -1) {
+			width = native_getWidth(getNativeHandler());
+		}
+		return width;
+	}
+	
+	public int getHeight() {
+		if(height == -1) {
+			height = native_getHeight(getNativeHandler());
+		}
+		return height;
+	}
+	
 	public static void setWrap(TextureWrap mode) { native_setWrap(mode.id); }
 	public static void setFilter(TextureFilter mode) { native_setFilter(mode.id); }
 	
