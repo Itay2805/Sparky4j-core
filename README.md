@@ -19,9 +19,9 @@ Just use the Sandbox project, It should be ready to use.
 Some changes have to be made because of Java's diffrence from C/C++
 
 # Currently in progress
-- [ ] Port ChernoCraft Example
 - [ ] Wrap the SPRenderAPI and make SPOpenGLRenderAPI
 - [ ] Optimize (Probably will stay in this list forever :P)
+- [ ] Work on wrapping the 3D engine :D
 
 # Links
 * sparky game engine - https://github.com/TheCherno/Sparky
