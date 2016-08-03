@@ -47,7 +47,7 @@
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\$(ProjectName)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Program Files\Java\jdk1.8.0_73\include\win32;C:\Program Files\Java\jdk1.8.0_73\include;$(SolutionDir)Dependencies\libvorbis\include;$(SolutionDir)Dependencies\OpenAL\include;$(ProjectDir)ext\freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_91\include\win32;C:\Program Files\Java\jdk1.8.0_91\include;$(SolutionDir)Dependencies\libvorbis\include;$(SolutionDir)Dependencies\OpenAL\include;$(ProjectDir)ext\freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\libogg\bin;$(SolutionDir)Dependencies\OpenAL\libs\Win32;$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\libvorbis\bin;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\$(ProjectName)</IntDir>
@@ -109,7 +109,9 @@
     <ClInclude Include="src\graphics\shaders\sp_graphics_shaders_Shader.h" />
     <ClInclude Include="src\graphics\sp_graphics_Texture.h" />
     <ClInclude Include="src\graphics\sp_graphics_Window.h" />
+    <ClInclude Include="src\platform\platform_SPOpenGLRenderAPI.h" />
     <ClInclude Include="src\util\sp_utils_Log.h" />
+    <ClInclude Include="src\wrapper\com_itay_wrapper_memory_Memory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\audio\sp_audio_Sound.cpp" />
@@ -125,7 +127,9 @@
     <ClCompile Include="src\graphics\sp_graphics_Sprite.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Texture.cpp" />
     <ClCompile Include="src\graphics\sp_graphics_Window.cpp" />
+    <ClCompile Include="src\platform\platform_SPOpenGLRenderAPI.cpp" />
     <ClCompile Include="src\util\sp_utils_Log.cpp" />
+    <ClCompile Include="src\wrapper\com_itay_wrapper_memory_Memory.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

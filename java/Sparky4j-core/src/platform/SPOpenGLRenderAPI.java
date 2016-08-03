@@ -1,6 +1,9 @@
 package platform;
 
-import sp.graphics.SPRenderAPI;
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+
+import sp.graphics.API.SPRenderAPI;
 
 public class SPOpenGLRenderAPI implements SPRenderAPI {
 
@@ -10,7 +13,7 @@ public class SPOpenGLRenderAPI implements SPRenderAPI {
 	public native int createRenderbuffer();
 
 	public native void ceateVertexArrays(int size, int[] arrays);
-	public native void createVertexBuffer(int size, int[] buffers);
+	public native void createVertexBuffers(int size, int[] buffers);
 	public native void createFramebuffers(int size, int[] buffers);
 	public native void createRenderbuffers(int size, int[] buffers);
 
@@ -18,17 +21,22 @@ public class SPOpenGLRenderAPI implements SPRenderAPI {
 	public native void bindBuffer(int target, int buffer);
 	public native void bindFramebuffer(int target, int buffer);
 	public native void bindRenderbuffer(int target, int buffer);
-
+	
+	public native void setBufferData(int target, int size, Buffer data, int usage);
+	public native void setBufferSubData(int target, int offset, int size, Buffer data);
+	public native ByteBuffer getBufferPointer(int target, int access);
+	public native void releaseBufferPointer(int target);
+	
 	public native void framebufferTexture2D(int target, int attachment, int textarget, int texture, int level);
 	public native void framebufferRenderbuffer(int target, int attachment, int renderbuffertarget, int renderbuffer);
 	public native void renderbufferStorage(int target, int format, int width, int height);
-	public native int getScreenBuffer();
+	public native int  getScreenBuffer();
 
 	public native void setViewport(int x, int y, int width, int height);
 	public native void clear(int flags);
 	public native void setClearColor(float r, float g, float b, float a);
 
-	public native int createTexture();
+	public native int  createTexture();
 	public native void createTextures(int size, int[] textures);
 	public native void bindTexture(int target, int texure);
 	public native void unbindTexture(int target);
@@ -54,9 +62,14 @@ public class SPOpenGLRenderAPI implements SPRenderAPI {
 	public native void freeTexture(int texture);
 	public native void freeTextures(int size, int[] textures);
 
-	public native void drawElements(int mode, int count, int type, int[] indices);
-	public native void drawElements(int mode, int count, int type, short[] indices);
+	public native void drawElements(int mode, int count, int type, Buffer indices);
 	
-	
+	public int getValue(String name) {
+		switch(name) {
+		case "float": return 0x1406;
+		case "unsigned_short": return 0x1403;
+		}
+		return -1;
+	}
 	
 }

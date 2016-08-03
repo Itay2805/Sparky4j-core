@@ -47,4 +47,4 @@
   b2WeldJoint.cpp
   b2WheelJoint.cpp
   b2Rope.cpp
-  Box2D.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Box2D.lib
+  Box2D.vcxproj -> C:\Users\home\Desktop\coding\Sparky4j\Sparky\bin\Release\Box2D.lib

@@ -1,12 +1,13 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-  sp_graphics_Sprite.cpp
-C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-core\src\sp/utils/FileUtils.h(14): warning C4390: ';': empty controlled statement found; is this the intent?
+  com_itay_wrapper_memory_Memory.cpp
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-     Creating library C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.lib and object C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.exp
-MSVCRT.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+     Creating library C:\Users\home\Desktop\coding\Sparky4j\Sparky\bin\Release\Sparky4j-core.lib and object C:\Users\home\Desktop\coding\Sparky4j\Sparky\bin\Release\Sparky4j-core.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  All 3013 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  114 of 3075 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
+    8 functions were new in current compilation
+    48 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\vc120.pdb'; linking object as if no debug info
-  Sandbox.vcxproj -> C:\Users\home\Downloads\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\Sparky-27c773a2fd0433cd5b5caa334988c29662c3e1f7\bin\Release\Sparky4j-core.dll
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\home\Desktop\coding\Sparky4j\Sparky\bin\Release\vc120.pdb'; linking object as if no debug info
+  Sandbox.vcxproj -> C:\Users\home\Desktop\coding\Sparky4j\Sparky\bin\Release\Sparky4j-core.dll

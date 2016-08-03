@@ -3,6 +3,13 @@ package sp;
 import sp.graphics.Window;
 import sp.utils.Timer;
 
+/**
+ * 
+ * This is an old class, Please use Application instead
+ * 
+ * @deprecated
+ *
+ */
 public abstract class Sparky {
 	
 	private static boolean init = false;
@@ -61,7 +68,7 @@ public abstract class Sparky {
 		while(!window.closed()) {
 			window.clear();
 			
-			if(updateTimer.elapsed() > (1.0f / 60.0f) * 1000) {
+			if(updateTimer.elapsed() > (1.0f / 60.0f)) {
 				window.updateInput();
 				update();
 				updates++;
@@ -72,7 +79,7 @@ public abstract class Sparky {
 			frames++;
 			window.update();
 			
-			if(timer.elapsed() > 1000) {
+			if(timer.elapsed() > 1) {
 				framesPerSecond = frames;
 				updatesPerSecond = updates;
 				frames = 0;

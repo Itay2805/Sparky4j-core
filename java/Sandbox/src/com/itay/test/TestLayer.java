@@ -23,6 +23,7 @@ public class TestLayer extends Layer2D {
 	
 	private Label fps;
 	private Label[] debugInfo;
+	private Sprite pink;
 	
 	public TestLayer() {
 		super(ShaderFactory.defaultShader(), Matrix4.orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));
@@ -36,7 +37,9 @@ public class TestLayer extends Layer2D {
 		
 		Texture.setFilter(TextureFilter.NEAREST);
 		add(new Sprite(0.0f, 0.0f, 8, 8, new Texture("Tex", "res/tb.png")));
-		add(new Sprite(-8.0f, -8.0f, 6, 6, 0xffff00ff));
+		
+		pink = new Sprite(-8.0f, -8.0f, 6, 6, 0xffff00ff);
+		add(pink);
 		
 		fps = new Label("", -15.5f, 7.8f, 0xffffffff);
 		add(fps);
@@ -59,7 +62,25 @@ public class TestLayer extends Layer2D {
 		Log.SPARKY_INFO(app.getUPS() + " ups," + app.getFPS() + " fps");
 	}
 	
-	public void onUpdate() {}
+	public void onUpdate() {
+		
+		if(window.isKeyPressed(Window.VK_UP)) {
+			pink.move(0, 0.2f);
+		}
+		
+		if(window.isKeyPressed(Window.VK_DOWN)) {
+			pink.move(0, -0.2f);
+		}
+
+		if(window.isKeyPressed(Window.VK_RIGHT)) {
+			pink.move(0.2f, -0);
+		}
+
+		if(window.isKeyPressed(Window.VK_LEFT)) {
+			pink.move(-0.2f, 0);
+		}
+		
+	}
 	
 	public boolean onEvent(Event event) {
 		return false;

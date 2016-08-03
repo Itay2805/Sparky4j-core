@@ -1,4 +1,6 @@
 package com.itay.test;
+import java.io.IOException;
+
 import sp.app.Application;
 
 public class Game extends Application {
@@ -15,7 +17,7 @@ public class Game extends Application {
 		pushLayer(new TestLayer());
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Game game = new Game();
 		game.start();
 	}
